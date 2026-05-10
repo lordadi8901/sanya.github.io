@@ -1,712 +1,911 @@
 <!doctype html>
 <html lang="en" style="scroll-behavior: smooth;">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ed-a-Mamma - Sustainable, nature-inspired clothing for babies, kids, and moms. Organic cotton, eco-friendly fashion designed with love." />
-    <title>Ed-a-Mamma | Premium Sustainable Kids Fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  </head>
-  <body>
-    <!-- Announcement Bar -->
-    <div class="announcement-bar" id="announcement-bar">
-      <div class="announcement-content">
-        <span>🌿 Free Shipping on orders above ₹999 | Use code <strong>NATURE20</strong> for 20% off</span>
-      </div>
-      <button class="announcement-close" id="announcement-close" aria-label="Close announcement">&times;</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ed-a-Mamma - Sustainable, nature-inspired clothing for babies, kids, and moms. Organic cotton, eco-friendly fashion designed with love." />
+  <title>Ed-a-Mamma | Premium Sustainable Kids Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-content">
+      <span>🌿 Free Shipping on orders above ₹999 | Use code <strong>NATURE20</strong> for 20% off</span>
     </div>
+    <button class="announcement-close" id="announcement-close" aria-label="Close announcement">&times;</button>
+  </div>
 
-    <!-- Header -->
-    <header class="header" id="header">
-      <div class="header-inner">
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
 
-        <!-- Logo -->
-        <a href="/" class="logo" id="logo">
-          <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 40px; width: auto; mix-blend-mode: multiply;" />
-        </a>
+      <!-- Logo -->
+      <a href="/" class="logo" id="logo">
+        <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 40px; width: auto; mix-blend-mode: multiply;" />
+      </a>
 
-        <!-- Navigation -->
-        <nav class="nav" id="nav">
-          <ul class="nav-list">
-            <li class="nav-item has-dropdown">
-            <a href="/collection.html" class="nav-link">All Category</a>
-            <div class="mega-dropdown" style="width: 900px; padding: 2rem; gap: 3rem; display: grid; grid-template-columns: repeat(4, 1fr);">
+      <!-- Navigation -->
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html" class="nav-link" style="font-weight: 800; text-transform: uppercase;">ALL
+              COLLECTION</a>
+            <div class="mega-dropdown"
+              style="width: 1000px; padding: 2.5rem 3rem; gap: 3rem; display: grid; grid-template-columns: 1fr 1fr 1fr; background: #fff url('/images/menu_bg_doodle.png') no-repeat right center; background-size: auto 90%; border-radius: 0 0 20px 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.1); border: 1.5px solid #c8e6c9;">
               <div class="dropdown-col">
-                <h4 style="color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase; margin-bottom: 1rem;">
-                  <a href="/collection.html?category=baby" style="color: inherit; text-decoration: none;">Baby</a>
-                </h4>
-                <ul style="gap: 0.8rem; display: flex; flex-direction: column; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                  <li><a href="/collection.html?category=baby-boy">Baby Boy</a></li>
-                  <li><a href="/collection.html?category=baby-girl">Baby Girl</a></li>
+                <h4
+                  style="color: #00a0e9; font-weight: 800; font-size: 1.1rem; border-bottom: none; margin-bottom: 1.2rem; font-family: var(--font-sans);">
+                  NEW ARRIVAL</h4>
+                <ul
+                  style="gap: 0.6rem; display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">
+                  <li><a href="/collection.html?category=girls" style="color: #444;">GIRLS (4 - 14)</a></li>
+                  <li><a href="/collection.html?category=boys" style="color: #444;">BOYS (4 - 14)</a></li>
+                  <li><a href="/collection.html?category=baby" style="color: #444;">BABY AND TODDLER (0 - 4 YEARS)</a>
+                  </li>
+                  <li><a href="/collection.html?category=maternity" style="color: #444;">MATERNITY</a></li>
+                  <li><a href="/collection.html?category=personal-care" style="color: #444;">PERSONAL CARE</a></li>
+                  <li><a href="/collection.html?category=toys" style="color: #444;">TOYS</a></li>
+                  <li><a href="/collection.html?category=gift-sets" style="color: #444;">GIFTING</a></li>
+                  <li><a href="/collection.html" style="font-weight: 700; color: #222; margin-top: 0.5rem;">VIEW ALL</a>
+                  </li>
                 </ul>
               </div>
               <div class="dropdown-col">
-                <h4 style="color: #ff6600; font-weight: 700; border-bottom: none; text-transform: uppercase; margin-bottom: 1rem;">
-                  <a href="/collection.html?category=kids" style="color: inherit; text-decoration: none;">Kids</a>
-                </h4>
-                <ul style="gap: 0.8rem; display: flex; flex-direction: column; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                  <li><a href="/collection.html?category=boys">Boys Clothing</a></li>
-                  <li><a href="/collection.html?category=girls">Girls Clothing</a></li>
-                  <li><a href="/collection.html?category=toy-story-x-ed-a-mamma">Toy Story Collection</a></li>
+                <h4
+                  style="color: #00a0e9; font-weight: 800; font-size: 1.1rem; border-bottom: none; margin-bottom: 1.2rem; font-family: var(--font-sans);">
+                  ORGANIC COTTON</h4>
+                <ul
+                  style="gap: 0.6rem; display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">
+                  <li><a href="/collection.html?type=tshirt" style="color: #444;">TOPS AND T SHIRTS</a></li>
+                  <li><a href="/collection.html?type=shirt" style="color: #444;">SHIRTS</a></li>
+                  <li><a href="/collection.html?type=jeans" style="color: #444;">JEANS, TROUSERS, JOGGERS</a></li>
+                  <li><a href="/collection.html?type=romper" style="color: #444;">ONESIES AND ROMPERS</a></li>
+                  <li><a href="/collection.html?type=set" style="color: #444;">CO ORD SETS</a></li>
+                  <li><a href="/collection.html?type=dress" style="color: #444;">DRESSES</a></li>
+                  <li><a href="/collection.html?type=jackets" style="color: #444;">JACKETS, SWEATSHIRTS, SWEATERS</a>
+                  </li>
+                  <li><a href="/collection.html?type=shorts" style="color: #444;">SHORTS AND SKIRTS</a></li>
+                  <li><a href="/collection.html" style="font-weight: 700; color: #222; margin-top: 0.5rem;">VIEW ALL</a>
+                  </li>
                 </ul>
               </div>
               <div class="dropdown-col">
-                <h4 style="color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase; margin-bottom: 1rem;">
-                  <a href="/collection.html?category=maternity" style="color: inherit; text-decoration: none;">Maternity</a>
-                </h4>
-                <ul style="gap: 0.8rem; display: flex; flex-direction: column; text-transform: uppercase; font-size: 0.85rem; font-weight: 500; margin-bottom: 2rem;">
-                  <li><a href="/collection.html?category=maternity&type=topwear">Topwear</a></li>
-                  <li><a href="/collection.html?category=maternity&type=dresses">Dresses</a></li>
-                </ul>
-                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-bottom: 1rem;">
-                  <a href="/collection.html?category=personal-care" style="color: inherit; text-decoration: none;">Personal Care</a>
-                </h4>
-                <ul style="gap: 0.8rem; display: flex; flex-direction: column; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                  <li><a href="/collection.html?category=personal-care&type=wash">Bath & Body</a></li>
-                  <li><a href="/collection.html?category=personal-care&type=wipes">Hygiene</a></li>
-                </ul>
-              </div>
-              <div class="dropdown-col">
-                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-bottom: 1rem;">
-                  <a href="/collection.html?category=toys" style="color: inherit; text-decoration: none;">Toys & More</a>
-                </h4>
-                <ul style="gap: 0.8rem; display: flex; flex-direction: column; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                  <li><a href="/collection.html?category=toys">Toys</a></li>
-                  <li><a href="/collection.html?category=gift-sets">Gift Sets</a></li>
-                  <li><a href="/collection.html?category=books">Books</a></li>
-                  <li style="margin-top: 1rem;"><a href="/collection.html?category=new" style="color: #ff6600; font-weight: 700;">New Arrivals</a></li>
-                  <li><a href="/collection.html?category=sale" style="color: #e44d26; font-weight: 700;">Offers & Sale</a></li>
-                </ul>
+                <div style="margin-bottom: 2rem;">
+                  <h4
+                    style="color: #00a0e9; font-weight: 800; font-size: 1.1rem; border-bottom: none; margin-bottom: 1.2rem; font-family: var(--font-sans);">
+                    SHOP BY GENDER</h4>
+                  <ul
+                    style="gap: 0.6rem; display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">
+                    <li><a href="/collection.html?category=baby" style="color: #444;">INFANTS - GIRL/BOY</a></li>
+                    <li><a href="/collection.html?category=unisex" style="color: #444;">UNISEX</a></li>
+                    <li><a href="/collection.html?category=kids" style="color: #444;">KIDS - GIRL/BOY</a></li>
+                    <li><a href="/collection.html" style="font-weight: 700; color: #222; margin-top: 0.2rem;">VIEW
+                        ALL</a></li>
+                  </ul>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                  <h4
+                    style="color: #00a0e9; font-weight: 800; font-size: 1.1rem; border-bottom: none; margin-bottom: 1.2rem; font-family: var(--font-sans);">
+                    SEASONS</h4>
+                  <ul
+                    style="gap: 0.6rem; display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">
+                    <li><a href="/collection.html?tag=autumn-winter" style="color: #444;">AUTUMN WINTER</a></li>
+                    <li><a href="/collection.html?tag=summer-spring" style="color: #444;">SUMMER SPRING (NEW)</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4
+                    style="color: #00a0e9; font-weight: 800; font-size: 1.1rem; border-bottom: none; margin-bottom: 1.2rem; font-family: var(--font-sans);">
+                    COLLABORATIONS</h4>
+                  <ul
+                    style="gap: 0.6rem; display: flex; flex-direction: column; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">
+                    <li><a href="/collection.html?category=toy-story-x-ed-a-mamma" style="color: #444;">EDA MAMMA x TOY
+                        STORY</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </li>
-            <li class="nav-item has-dropdown">
-              <a href="/collection.html?category=baby" class="nav-link">Baby</a>
-              <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
-                <div class="dropdown-col">
-                  <h4 style="display: flex; align-items: center; gap: 0.5rem; color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="2"/><circle cx="17" cy="20" r="2"/><path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z"/></svg>
-                    <a href="/collection.html?category=baby-boy" style="color: inherit; text-decoration: none;">Baby Boy</a>
-                  </h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=baby-boy&type=romper">Onesies & Rompers</a></li>
-                    <li><a href="/collection.html?category=baby-boy&type=tshirt">T-shirts & Sweatshirts</a></li>
-                    <li><a href="/collection.html?category=baby-boy&type=shirt">Shirts</a></li>
-                    <li><a href="/collection.html?category=baby-boy&type=bottom">Bottomwear</a></li>
-                    <li><a href="/collection.html?category=baby-boy&type=set">Clothing Sets</a></li>
-                    <li><a href="/collection.html?category=baby-boy&type=jacket">Jackets & Sweater</a></li>
-                    <li><a href="/collection.html?category=baby-boy&type=gift">Gift Sets</a></li>
-                  </ul>
-                </div>
-                
-                <div class="dropdown-col">
-                  <h4 style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="2"/><circle cx="17" cy="20" r="2"/><path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z"/></svg>
-                    <a href="/collection.html?category=baby-girl" style="color: inherit; text-decoration: none;">Baby Girl</a>
-                  </h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=baby-girl&type=romper">Onesies & Rompers</a></li>
-                    <li><a href="/collection.html?category=baby-girl&type=top">Tops & Tees</a></li>
-                    <li><a href="/collection.html?category=baby-girl&type=dress">Dresses</a></li>
-                    <li><a href="/collection.html?category=baby-girl&type=bottom">Bottomwear</a></li>
-                    <li><a href="/collection.html?category=baby-girl&type=set">Clothing Sets</a></li>
-                    <li><a href="/collection.html?category=baby-girl&type=jacket">Jackets & Sweater</a></li>
-                    <li><a href="/collection.html?category=baby-girl&type=hair">Hair Accessories</a></li>
-                  </ul>
-                </div>
-
-                <div class="dropdown-featured" style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
-                  <img src="/images/teddy_balloons.png" alt="Baby Collection" style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
-                </div>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=baby" class="nav-link"
+              style="font-weight: 800; text-transform: uppercase;">BABY</a>
+            <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  <a href="/collection.html?category=baby-boy" style="color: inherit; text-decoration: none;">Baby
+                    Boy</a>
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=baby-boy&type=romper">Onesies & Rompers</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=tshirt">T-shirts & Sweatshirts</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=shirt">Shirts</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=bottom">Bottomwear</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=set">Clothing Sets</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=jacket">Jackets & Sweater</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=gift">Gift Sets</a></li>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item has-dropdown">
-              <a href="/collection.html?category=kids" class="nav-link">Kids</a>
-              <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
-                <div class="dropdown-col">
-                  <h4 style="display: flex; align-items: center; gap: 0.5rem; color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="2"/><circle cx="17" cy="20" r="2"/><path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z"/></svg>
-                    <a href="/collection.html?category=boys" style="color: inherit; text-decoration: none;">Boys Clothing</a>
-                  </h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=boys&type=tshirt">T-Shirts</a></li>
-                    <li><a href="/collection.html?category=boys&type=shirt">Shirts</a></li>
-                    <li><a href="/collection.html?category=boys&type=jeans">Jeans</a></li>
-                    <li><a href="/collection.html?category=boys&type=trousers">Trousers & Joggers</a></li>
-                    <li><a href="/collection.html?category=boys&type=shorts">Shorts</a></li>
-                    <li><a href="/collection.html?category=boys&type=set">Co-ord Sets</a></li>
-                    <li><a href="/collection.html?category=boys&type=sweaters">Sweaters & Jackets</a></li>
-                    <li><a href="/collection.html?category=boys&type=sweatshirts">Sweatshirts</a></li>
-                  </ul>
-                </div>
-                
-                <div class="dropdown-col">
-                  <h4 style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="2"/><circle cx="17" cy="20" r="2"/><path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z"/></svg>
-                    <a href="/collection.html?category=girls" style="color: inherit; text-decoration: none;">Girls Clothing</a>
-                  </h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=girls&type=tops">Tops & Tees</a></li>
-                    <li><a href="/collection.html?category=girls&type=dress">Dresses</a></li>
-                    <li><a href="/collection.html?category=girls&type=set">Co-ords & Jumpsuits</a></li>
-                    <li><a href="/collection.html?category=girls&type=jeans">Jeans Joggers & Trousers</a></li>
-                    <li><a href="/collection.html?category=girls&type=shorts">Shorts, Skirts & Skorts</a></li>
-                    <li><a href="/collection.html?category=girls&type=jackets">Jackets & Sweaters</a></li>
-                    <li><a href="/collection.html?category=girls&type=hair">Hair Accessories</a></li>
-                  </ul>
-                </div>
 
-                <div class="dropdown-col">
-                  <h4 style="display: flex; align-items: center; gap: 0.5rem; color: #ff6600; font-weight: 700; border-bottom: none; text-transform: uppercase;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="2"/><circle cx="17" cy="20" r="2"/><path d="M5 2h2l1.6 7H19l1.4-6h1.6"/></svg>
-                    <a href="/collection.html?category=toy-story-x-ed-a-mamma" style="color: inherit; text-decoration: none;">Collection</a>
-                  </h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=toy-story-x-ed-a-mamma">Toy Story × Ed‑a‑Mamma</a></li>
-                  </ul>
-                </div>
-
-                <div class="dropdown-featured" style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
-                  <img src="/images/kids_playing.png" alt="Kids Collection" style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
-                </div>
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  <a href="/collection.html?category=baby-girl" style="color: inherit; text-decoration: none;">Baby
+                    Girl</a>
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=baby-girl&type=romper">Onesies & Rompers</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=top">Tops & Tees</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=dress">Dresses</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=bottom">Bottomwear</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=set">Clothing Sets</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=jacket">Jackets & Sweater</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=hair">Hair Accessories</a></li>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item has-dropdown">
-              <a href="/collection.html?category=maternity" class="nav-link">Maternity</a>
-              <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
-                <div class="dropdown-col">
-                  <h4 style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0V15m-3-3h6"/></svg>
-                    <a href="/collection.html?category=maternity" style="color: inherit; text-decoration: none;">Maternity Wear</a>
-                  </h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=maternity&type=topwear">Topwear</a></li>
-                    <li><a href="/collection.html?category=maternity&type=bottomwear">Bottomwear</a></li>
-                    <li><a href="/collection.html?category=maternity&type=dresses">Dresses</a></li>
-                    <li><a href="/collection.html?category=maternity&type=coords">Co-ords</a></li>
-                  </ul>
-                </div>
-                
-                <div class="dropdown-featured" style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
-                  <img src="/images/maternity_illustration.png" alt="Maternity Collection" style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
-                </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/teddy_balloons.png" alt="Baby Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
               </div>
-            </li>
-            <li class="nav-item has-dropdown">
-              <a href="/collection.html?category=personal-care" class="nav-link">Personal Care</a>
-              <div class="mega-dropdown" style="left: auto; right: 0; transform: translateY(10px); width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
-                <div class="dropdown-col">
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;"><a href="/collection.html?category=personal-care" style="color: inherit; text-decoration: none;">Bath & Body Care</a></h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=personal-care&type=rash-balm">Anti - Rash Balm</a></li>
-                    <li><a href="/collection.html?category=personal-care&type=lotion">Lotion</a></li>
-                    <li><a href="/collection.html?category=personal-care&type=powder">Talc Free Powder</a></li>
-                    <li><a href="/collection.html?category=personal-care&type=wash">Baby Wash</a></li>
-                    <li><a href="/collection.html?category=personal-care&type=oil">Massage Oil</a></li>
-                    <li><a href="/collection.html?category=personal-care&type=travel">Travel Kit</a></li>
-                  </ul>
-                </div>
-                
-                <div class="dropdown-col">
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;"><a href="/collection.html?category=personal-care&type=wipes" style="color: inherit; text-decoration: none;">Hygiene Essentials</a></h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=personal-care&type=wipes">Wet Wipes</a></li>
-                  </ul>
-                  
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 2rem;">Laundery Care</h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=personal-care&type=detergent">Detergent</a></li>
-                  </ul>
-                </div>
-
-                <div class="dropdown-featured" style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
-                  <img src="/images/personal_care_illustration.png" alt="Personal Care Collection" style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
-                </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=kids" class="nav-link"
+              style="font-weight: 800; text-transform: uppercase;">KIDS</a>
+            <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  <a href="/collection.html?category=boys" style="color: inherit; text-decoration: none;">Boys
+                    Clothing</a>
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=boys&type=tshirt">T-Shirts</a></li>
+                  <li><a href="/collection.html?category=boys&type=shirt">Shirts</a></li>
+                  <li><a href="/collection.html?category=boys&type=jeans">Jeans</a></li>
+                  <li><a href="/collection.html?category=boys&type=trousers">Trousers & Joggers</a></li>
+                  <li><a href="/collection.html?category=boys&type=shorts">Shorts</a></li>
+                  <li><a href="/collection.html?category=boys&type=set">Co-ord Sets</a></li>
+                  <li><a href="/collection.html?category=boys&type=sweaters">Sweaters & Jackets</a></li>
+                  <li><a href="/collection.html?category=boys&type=sweatshirts">Sweatshirts</a></li>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item has-dropdown">
-              <a href="/collection.html?category=toys" class="nav-link">Toys</a>
-              <div class="mega-dropdown" style="left: auto; right: 0; transform: translateY(10px); width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
-                <div class="dropdown-col">
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;"><a href="/collection.html?category=toys" style="color: inherit; text-decoration: none;">Toys</a></h4>
-                  <ul style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
-                    <li><a href="/collection.html?category=toys&type=plushies">Plushies</a></li>
-                    <li><a href="/collection.html?category=toys&type=wooden-toys">Wooden Toys</a></li>
-                    <li><a href="/collection.html?category=toys&type=dolls">Dolls</a></li>
-                  </ul>
-                </div>
-                
-                <div class="dropdown-col">
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;"><a href="/collection.html?category=gift-sets" style="color: inherit; text-decoration: none;">Gift Sets</a></h4>
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 1.5rem;"><a href="/collection.html?category=blankets-cushions" style="color: inherit; text-decoration: none;">Blankets & Cushions</a></h4>
-                  <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 1.5rem;"><a href="/collection.html?category=books" style="color: inherit; text-decoration: none;">Books</a></h4>
-                </div>
 
-                <div class="dropdown-featured" style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
-                  <img src="/images/toys_illustration.png" alt="Toys Collection" style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
-                </div>
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  <a href="/collection.html?category=girls" style="color: inherit; text-decoration: none;">Girls
+                    Clothing</a>
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=girls&type=tops">Tops & Tees</a></li>
+                  <li><a href="/collection.html?category=girls&type=dress">Dresses</a></li>
+                  <li><a href="/collection.html?category=girls&type=set">Co-ords & Jumpsuits</a></li>
+                  <li><a href="/collection.html?category=girls&type=jeans">Jeans Joggers & Trousers</a></li>
+                  <li><a href="/collection.html?category=girls&type=shorts">Shorts, Skirts & Skorts</a></li>
+                  <li><a href="/collection.html?category=girls&type=jackets">Jackets & Sweaters</a></li>
+                  <li><a href="/collection.html?category=girls&type=hair">Hair Accessories</a></li>
+                </ul>
               </div>
-            </li>
-          </ul>
-        </nav>
 
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <button class="header-icon" id="search-toggle" aria-label="Search">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          </button>
-          <button class="header-icon" id="wishlist-toggle" aria-label="Wishlist">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.3l7.8-7.8 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-            <span class="badge" id="wishlist-count">0</span>
-          </button>
-          <button class="header-icon" aria-label="Account" id="account-btn">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </button>
-          <button class="header-icon cart-icon" id="cart-toggle" aria-label="Cart">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
-            <span class="badge" id="cart-count">0</span>
-          </button>
-        </div>
-      </div>
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #ff6600; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6" />
+                  </svg>
+                  <a href="/collection.html?category=toy-story-x-ed-a-mamma"
+                    style="color: inherit; text-decoration: none;">Collection</a>
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=toy-story-x-ed-a-mamma">Toy Story × Ed‑a‑Mamma</a></li>
+                </ul>
+              </div>
 
-      <!-- Search Overlay -->
-      <div class="search-overlay" id="search-overlay">
-        <div class="search-inner">
-          <input type="text" placeholder="Search for products, brands..." class="search-input" id="search-input" />
-          <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
-          <div class="search-results" id="search-results"></div>
-        </div>
-      </div>
-    </header>
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/kids_playing.png" alt="Kids Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=maternity" class="nav-link"
+              style="font-weight: 800; text-transform: uppercase;">MATERNITY</a>
+            <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0V15m-3-3h6" />
+                  </svg>
+                  <a href="/collection.html?category=maternity" style="color: inherit; text-decoration: none;">Maternity
+                    Wear</a>
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=maternity&type=topwear">Topwear</a></li>
+                  <li><a href="/collection.html?category=maternity&type=bottomwear">Bottomwear</a></li>
+                  <li><a href="/collection.html?category=maternity&type=dresses">Dresses</a></li>
+                  <li><a href="/collection.html?category=maternity&type=coords">Co-ords</a></li>
+                </ul>
+              </div>
 
-    <!-- Mobile Drawer Menu -->
-    <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
-    <div class="mobile-drawer" id="mobile-drawer">
-      <div class="drawer-header">
-        <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 30px; width: auto;" />
-        <button class="drawer-close" id="drawer-close">&times;</button>
-      </div>
-      <div class="drawer-body">
-        <ul class="mobile-nav-list">
-          <li><a href="/collection.html">All Category</a></li>
-          <li><a href="/collection.html?category=baby">Baby Collection</a></li>
-          <li><a href="/collection.html?category=kids">Kids Collection</a></li>
-          <li><a href="/collection.html?category=maternity">Maternity</a></li>
-          <li><a href="/collection.html?category=sale" class="offers-link">Offers &amp; Sale</a></li>
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/maternity_illustration.png" alt="Maternity Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=personal-care" class="nav-link"
+              style="font-weight: 800; text-transform: uppercase;">PERSONAL CARE</a>
+            <div class="mega-dropdown"
+              style="left: auto; right: 0; transform: translateY(10px); width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <a href="/collection.html?category=personal-care" style="color: inherit; text-decoration: none;">Bath
+                    & Body Care</a></h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=personal-care&type=rash-balm">Anti - Rash Balm</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=lotion">Lotion</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=powder">Talc Free Powder</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=wash">Baby Wash</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=oil">Massage Oil</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=travel">Travel Kit</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <a href="/collection.html?category=personal-care&type=wipes"
+                    style="color: inherit; text-decoration: none;">Hygiene Essentials</a></h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=personal-care&type=wipes">Wet Wipes</a></li>
+                </ul>
+
+                <h4
+                  style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 2rem;">
+                  Laundery Care</h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=personal-care&type=detergent">Detergent</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/personal_care_illustration.png" alt="Personal Care Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=toys" class="nav-link"
+              style="font-weight: 800; text-transform: uppercase;">TOYS&GIFTS</a>
+            <div class="mega-dropdown"
+              style="left: auto; right: 0; transform: translateY(10px); width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <a href="/collection.html?category=toys" style="color: inherit; text-decoration: none;">Toys</a></h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=toys&type=plushies">Plushies</a></li>
+                  <li><a href="/collection.html?category=toys&type=wooden-toys">Wooden Toys</a></li>
+                  <li><a href="/collection.html?category=toys&type=dolls">Dolls</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <a href="/collection.html?category=gift-sets" style="color: inherit; text-decoration: none;">Gift
+                    Sets</a></h4>
+                <h4
+                  style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 1.5rem;">
+                  <a href="/collection.html?category=blankets-cushions"
+                    style="color: inherit; text-decoration: none;">Blankets & Cushions</a></h4>
+                <h4
+                  style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 1.5rem;">
+                  <a href="/collection.html?category=books" style="color: inherit; text-decoration: none;">Books</a>
+                </h4>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/toys_illustration.png" alt="Toys Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="/collection.html?category=sale" class="nav-link"
+              style="font-weight: 800; text-transform: uppercase;">OFFERS</a>
+          </li>
         </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="header-icon" id="search-toggle" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </button>
+        <button class="header-icon" id="wishlist-toggle" aria-label="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.3l7.8-7.8 1-1.1a5.5 5.5 0 0 0 0-7.8z" />
+          </svg>
+          <span class="badge" id="wishlist-count">0</span>
+        </button>
+        <button class="header-icon" aria-label="Account" id="account-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </button>
+        <button class="header-icon cart-icon" id="cart-toggle" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+          </svg>
+          <span class="badge" id="cart-count">0</span>
+        </button>
       </div>
     </div>
 
-    <!-- Shopping Cart Drawer -->
-    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
-    <div class="cart-drawer" id="cart-drawer">
-      <div class="cart-header">
-        <h3>Your Cart</h3>
-        <button class="cart-close" id="cart-close">&times;</button>
-      </div>
-      <div class="cart-body" id="cart-items">
-        <div class="empty-cart-message">Your cart is currently empty.</div>
-      </div>
-      <div class="cart-footer">
-        <div class="cart-total">
-          <span>Subtotal</span>
-          <span id="cart-subtotal">₹0</span>
-        </div>
-        <p class="cart-tax-note">Shipping & taxes calculated at checkout.</p>
-        <button class="btn btn-primary btn-block" id="checkout-btn" disabled onclick="alert('Proceeding to secure checkout...')">Proceed to Checkout</button>
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-inner">
+        <input type="text" placeholder="Search for products, brands..." class="search-input" id="search-input" />
+        <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+        <div class="search-results" id="search-results"></div>
       </div>
     </div>
+  </header>
 
-    <!-- Wishlist Drawer -->
-    <div class="cart-drawer-overlay" id="wishlist-drawer-overlay"></div>
-    <div class="cart-drawer" id="wishlist-drawer" style="background: #fdf2f3;">
-      <div class="cart-header">
-        <h3>Your Wishlist</h3>
-        <button class="cart-close" id="wishlist-close">&times;</button>
-      </div>
-      <div class="cart-body" id="wishlist-items">
-        <div class="empty-cart-message">Your wishlist is empty. Start adding products you love!</div>
-      </div>
-      <div class="cart-footer">
-        <a href="/collection.html" class="btn btn-primary btn-block">Continue Shopping</a>
-      </div>
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 30px; width: auto;" />
+      <button class="drawer-close" id="drawer-close">&times;</button>
     </div>
-
-    <!-- Quick View Modal -->
-    <div class="quickview-overlay" id="quickview-overlay"></div>
-    <div class="quickview-modal" id="quickview-modal">
-      <button class="quickview-close" id="quickview-close">&times;</button>
-      <div class="quickview-content" id="quickview-content">
-        <!-- Injected via JS -->
-      </div>
+    <div class="drawer-body">
+      <ul class="mobile-nav-list">
+        <li><a href="/collection.html">All Category</a></li>
+        <li><a href="/collection.html?category=baby">Baby Collection</a></li>
+        <li><a href="/collection.html?category=kids">Kids Collection</a></li>
+        <li><a href="/collection.html?category=maternity">Maternity</a></li>
+        <li><a href="/collection.html?category=sale" class="offers-link">Offers &amp; Sale</a></li>
+      </ul>
     </div>
+  </div>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="hero">
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cart-close">&times;</button>
+    </div>
+    <div class="cart-body" id="cart-items">
+      <div class="empty-cart-message">Your cart is currently empty.</div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">₹0</span>
+      </div>
+      <p class="cart-tax-note">Shipping & taxes calculated at checkout.</p>
+      <button class="btn btn-primary btn-block" id="checkout-btn" disabled
+        onclick="alert('Proceeding to secure checkout...')">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="cart-drawer-overlay" id="wishlist-drawer-overlay"></div>
+  <div class="cart-drawer" id="wishlist-drawer" style="background: #fdf2f3;">
+    <div class="cart-header">
+      <h3>Your Wishlist</h3>
+      <button class="cart-close" id="wishlist-close">&times;</button>
+    </div>
+    <div class="cart-body" id="wishlist-items">
+      <div class="empty-cart-message">Your wishlist is empty. Start adding products you love!</div>
+    </div>
+    <div class="cart-footer">
+      <a href="/collection.html" class="btn btn-primary btn-block">Continue Shopping</a>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="quickview-overlay" id="quickview-overlay"></div>
+  <div class="quickview-modal" id="quickview-modal">
+    <button class="quickview-close" id="quickview-close">&times;</button>
+    <div class="quickview-content" id="quickview-content">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
       <div class="hero-slider" id="hero-slider">
 
-          <!-- Slide 1: Summer Story Video Banner -->
-          <div class="hero-slide active" data-index="0">
-            <div class="hero-bg">
-              <video src="/banner_summer_story.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;object-position:center;"></video>
-              <div class="hero-bg-overlay" style="background:rgba(0,0,0,0.1);"></div>
+        <!-- Slide 1: Summer Story Video Banner -->
+        <div class="hero-slide active" data-index="0">
+          <div class="hero-bg">
+            <video src="/banner_summer_story.mp4" autoplay loop muted playsinline
+              style="width:100%;height:100%;object-fit:cover;object-position:center;"></video>
+            <div class="hero-bg-overlay" style="background:rgba(0,0,0,0.1);"></div>
+          </div>
+          <div class="hero-content">
+            <div class="hero-actions">
+              <a href="/collection.html?category=sale" class="btn btn-primary hero-btn">Explore Summer Stories</a>
             </div>
-            <div class="hero-content">
-              <div class="hero-actions">
-                <a href="/collection.html?category=sale" class="btn btn-primary hero-btn">Explore Summer Stories</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2: Summer Story Image -->
-          <div class="hero-slide" data-index="1">
-            <a href="/collection.html?category=sale" class="hero-bg" style="display:block; height:100%;">
-              <img src="/images/banner_summer_story.png" alt="Summer Story Collection" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
-            </a>
-          </div>
-
-          <!-- Slide 3: Banner 3 -->
-          <div class="hero-slide" data-index="2">
-            <a href="/collection.html" class="hero-bg" style="display:block; height:100%;">
-              <img src="/images/banner_3.png" alt="New Collection" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
-            </a>
-          </div>
-
-          <!-- Slide 4: Banner 4 -->
-          <div class="hero-slide" data-index="3">
-            <a href="/collection.html?category=toy-story-x-ed-a-mamma" class="hero-bg" style="display:block; height:100%;">
-              <img src="/images/banner_4.png" alt="Toys Collection" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
-            </a>
           </div>
         </div>
 
-        <div class="slider-arrows">
-          <button class="slider-arrow prev" id="hero-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-          <button class="slider-arrow next" id="hero-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
-        </div>
-
-        <div class="hero-indicators" id="hero-indicators">
-          <button class="indicator active" data-index="0" aria-label="Slide 1"></button>
-          <button class="indicator" data-index="1" aria-label="Slide 2"></button>
-          <button class="indicator" data-index="2" aria-label="Slide 3"></button>
-          <button class="indicator" data-index="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="hero-scroll-hint">
-          <a href="#categories" style="display: flex; flex-direction: column; align-items: center; color: white;">
-            <div class="scroll-mouse">
-              <div class="scroll-dot"></div>
-            </div>
-            <span>Scroll to explore</span>
+        <!-- Slide 2: Summer Story Image -->
+        <div class="hero-slide" data-index="1">
+          <a href="/collection.html?category=sale" class="hero-bg" style="display:block; height:100%;">
+            <img src="/images/banner_summer_story.png" alt="Summer Story Collection"
+              style="width:100%;height:100%;object-fit:cover;object-position:center;" />
           </a>
         </div>
-      </section>
 
-      <!-- Trust Badges -->
-      <section class="trust-bar">
-        <div class="trust-item">
-          <div class="trust-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C10 14.5 10.5 13.81 12 11.5"/></svg>
-          </div>
-          <div class="trust-text">
-            <strong>Organic Fabric</strong>
-            <span>Sustainably sourced cotton</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          </div>
-          <div class="trust-text">
-            <strong>Free Shipping</strong>
-            <span>On orders above ₹999</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"/></svg>
-          </div>
-          <div class="trust-text">
-            <strong>Easy Returns</strong>
-            <span>30-day return policy</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div class="trust-text">
-            <strong>Safe & Certified</strong>
-            <span>GOTS certified fabrics</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Added Home Banners -->
-      <section class="home-banners" style="padding: 2rem 0; background-color: var(--bg-color);">
-        <div class="container" style="display: flex; flex-direction: column; gap: 2rem;">
-          <img src="/images/home_ban/momma_pappa.png" alt="Momma Pappa Banner" style="width: 100%; height: auto; border-radius: 12px; display: block;">
-          <img src="/images/home_ban/2.png" alt="Home Banner 2" style="width: 100%; height: auto; border-radius: 12px; display: block;">
-          <img src="/images/home_ban/customer_picks.png" alt="Customer Picks" style="width: 100%; height: auto; border-radius: 12px; display: block;">
-          <img src="/images/home_ban/3.png" alt="Home Banner 3" style="width: 100%; height: auto; border-radius: 12px; display: block;">
-          <a href="/collection.html?category=toy-story-x-ed-a-mamma" style="display: block;">
-            <img src="/images/home_ban/4.png" alt="Toys Collection" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <!-- Slide 3: Banner 3 -->
+        <div class="hero-slide" data-index="2">
+          <a href="/collection.html" class="hero-bg" style="display:block; height:100%;">
+            <img src="/images/banner_3.png" alt="New Collection"
+              style="width:100%;height:100%;object-fit:cover;object-position:center;" />
           </a>
-          <img src="/images/home_ban/5.png" alt="Home Banner 5" style="width: 100%; height: auto; border-radius: 12px; display: block;">
-          <img src="/images/home_ban/5(1).png" alt="Home Banner 5 Extra" style="width: 100%; height: auto; border-radius: 12px; display: block;">
         </div>
-      </section>
 
-      <!-- Sustainability Section -->
-      <section class="sustainability-section" id="sustainability">
-        <div class="container">
-          <div class="sustain-grid">
-            <div class="sustain-content">
-              <span class="section-tag">Our Promise</span>
-              <h2 class="section-title">Made with Love,<br/><em>For the Planet</em></h2>
-              <p>At Ed-a-Mamma, we believe fashion can be a force for good. Every piece is crafted from sustainably sourced, organic materials — because the earth deserves as much care as our children.</p>
-              <div class="sustain-stats">
-                <div class="stat">
-                  <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
-                  <span class="stat-label">Organic Cotton</span>
-                </div>
-                <div class="stat">
-                  <span class="stat-number" data-target="50">0</span><span class="stat-suffix">K+</span>
-                  <span class="stat-label">Happy Families</span>
-                </div>
-                <div class="stat">
-                  <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
-                  <span class="stat-label">Less Water Used</span>
-                </div>
-              </div>
-              <a href="#hero" class="btn btn-outline-dark">Back to Top ↑</a>
-            </div>
-            <div class="sustain-visual">
-              <div class="sustain-image-stack">
-                <div class="sustain-img s1">
-                  <img src="/images/promise/made_with_love.png" alt="Made with Love" />
-                </div>
-                <div class="sustain-img s2">
-                  <img src="/images/promise/alia.png" alt="Brand Ambassador" />
-                </div>
-              </div>
-            </div>
+        <!-- Slide 4: Banner 4 -->
+        <div class="hero-slide" data-index="3">
+          <a href="/collection.html?category=toy-story-x-ed-a-mamma" class="hero-bg"
+            style="display:block; height:100%;">
+            <img src="/images/banner_4.png" alt="Toys Collection"
+              style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+          </a>
+        </div>
+      </div>
+
+      <div class="slider-arrows">
+        <button class="slider-arrow prev" id="hero-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6" />
+          </svg></button>
+        <button class="slider-arrow next" id="hero-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6" />
+          </svg></button>
+      </div>
+
+      <div class="hero-indicators" id="hero-indicators">
+        <button class="indicator active" data-index="0" aria-label="Slide 1"></button>
+        <button class="indicator" data-index="1" aria-label="Slide 2"></button>
+        <button class="indicator" data-index="2" aria-label="Slide 3"></button>
+        <button class="indicator" data-index="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="hero-scroll-hint">
+        <a href="#categories" style="display: flex; flex-direction: column; align-items: center; color: white;">
+          <div class="scroll-mouse">
+            <div class="scroll-dot"></div>
           </div>
-        </div>
-      </section>
+          <span>Scroll to explore</span>
+        </a>
+      </div>
+    </section>
 
-      <!-- Added Home Banners (Part 2) -->
-      <section class="home-banners-2" style="padding: 5rem 0 2rem; background-color: var(--bg-color);">
-        <div class="container" style="display: flex; flex-direction: column; gap: 2rem;">
-          <img src="/images/home_ban/6.png" alt="Home Banner 6" style="width: 100%; height: auto; border-radius: 12px; display: block;">
-          <img src="/images/home_ban/7.png" alt="Home Banner 7" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+    <!-- Trust Badges -->
+    <section class="trust-bar">
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C10 14.5 10.5 13.81 12 11.5" />
+          </svg>
         </div>
-      </section>
-
-      <!-- Newsletter -->
-      <section class="newsletter-section" id="newsletter">
-        <div class="container">
-          <div class="newsletter-card">
-            <div class="newsletter-content">
-              <h2>Join the Ed-a-Mamma Family</h2>
-              <p>Get 15% off your first order + exclusive access to new drops and special offers</p>
-              <form class="newsletter-form" id="newsletter-form">
-                <input type="email" placeholder="Your email address" class="newsletter-input" id="newsletter-email" required />
-                <button type="submit" class="btn btn-primary" id="newsletter-submit">Subscribe</button>
-              </form>
-              <span class="newsletter-note">No spam, ever. Unsubscribe anytime.</span>
-            </div>
-          </div>
+        <div class="trust-text">
+          <strong>Organic Fabric</strong>
+          <span>Sustainably sourced cotton</span>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13" />
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+            <circle cx="5.5" cy="18.5" r="2.5" />
+            <circle cx="18.5" cy="18.5" r="2.5" />
+          </svg>
+        </div>
+        <div class="trust-text">
+          <strong>Free Shipping</strong>
+          <span>On orders above ₹999</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 14 4 9l5-5" />
+            <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />
+          </svg>
+        </div>
+        <div class="trust-text">
+          <strong>Easy Returns</strong>
+          <span>30-day return policy</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <div class="trust-text">
+          <strong>Safe & Certified</strong>
+          <span>GOTS certified fabrics</span>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="footer">
+    <!-- Added Home Banners -->
+    <section class="home-banners" style="padding: 2rem 0; background-color: var(--bg-color);">
+      <div class="container" style="display: flex; flex-direction: column; gap: 2rem;">
+        <img src="/images/home_ban/momma_pappa.png" alt="Momma Pappa Banner"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <img src="/images/home_ban/2.png" alt="Home Banner 2"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <img src="/images/home_ban/customer_picks.png" alt="Customer Picks"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <img src="/images/home_ban/3.png" alt="Home Banner 3"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <a href="/collection.html?category=toy-story-x-ed-a-mamma" style="display: block;">
+          <img src="/images/home_ban/4.png" alt="Toys Collection"
+            style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        </a>
+        <img src="/images/home_ban/5.png" alt="Home Banner 5"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <img src="/images/home_ban/5(1).png" alt="Home Banner 5 Extra"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+      </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="sustainability-section" id="sustainability">
       <div class="container">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <a href="/" class="footer-logo">
-              <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 40px; margin-bottom: 1.5rem; mix-blend-mode: multiply;" />
-            </a>
-            <p class="footer-tagline">Sustainable, nature-inspired clothing for babies, kids, and moms. Designed with love, made with care.</p>
-            <div class="social-links">
-              <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
-              </a>
-              <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-              <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-              </a>
+        <div class="sustain-grid">
+          <div class="sustain-content">
+            <span class="section-tag">Our Promise</span>
+            <h2 class="section-title">Made with Love,<br /><em>For the Planet</em></h2>
+            <p>At Ed-a-Mamma, we believe fashion can be a force for good. Every piece is crafted from sustainably
+              sourced, organic materials — because the earth deserves as much care as our children.</p>
+            <div class="sustain-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                <span class="stat-label">Organic Cotton</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="50">0</span><span class="stat-suffix">K+</span>
+                <span class="stat-label">Happy Families</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
+                <span class="stat-label">Less Water Used</span>
+              </div>
             </div>
+            <a href="#hero" class="btn btn-outline-dark">Back to Top ↑</a>
           </div>
-          <div class="footer-links-grid">
-            <div class="footer-column">
-              <h4>About</h4>
-              <ul>
-                <li><a href="/index.html#sustainability">About Us</a></li>
-                <li><a href="/index.html#sustainability">Impact</a></li>
-                <li><a href="/index.html#newsletter">Community</a></li>
-                <li><a href="/collection.html">School Uniform</a></li>
-              </ul>
+          <div class="sustain-visual">
+            <div class="sustain-image-stack">
+              <div class="sustain-img s1">
+                <img src="/images/promise/made_with_love.png" alt="Made with Love" />
+              </div>
+              <div class="sustain-img s2">
+                <img src="/images/promise/alia.png" alt="Brand Ambassador" />
+              </div>
             </div>
-            <div class="footer-column">
-              <h4>Collection</h4>
-              <ul>
-                <li><a href="/collection.html?category=baby">Babies (0–3 yrs)</a></li>
-                <li><a href="/collection.html?category=kids">Kids (2–10 yrs)</a></li>
-                <li><a href="/collection.html?category=maternity">Maternity</a></li>
-                <li><a href="/collection.html?category=new">New Arrivals</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Support</h4>
-              <ul>
-                <li><a href="mailto:support@edamamma.com">FAQ & Contact Us</a></li>
-                <li><a href="/collection.html">Returns & Exchanges</a></li>
-                <li><a href="/collection.html">Track My Order</a></li>
-                <li><a href="/collection.html">Store Locator</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Ed-a-Mamma. All rights reserved. Made with 🌿 for a better planet.</p>
-          <div class="payment-icons">
-            <span style="font-weight: bold; margin-right: 10px;">Visa</span>
-            <span style="font-weight: bold; margin-right: 10px;">Mastercard</span>
-            <span style="font-weight: bold; margin-right: 10px;">UPI</span>
-            <span style="font-weight: bold;">PayTM</span>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Account Modal -->
-    <div class="account-overlay" id="account-overlay"></div>
-    <div class="account-modal" id="account-modal">
-      <button class="account-close" id="account-close">&times;</button>
-      <div class="account-content" id="account-login-view">
-        <div class="account-header" style="text-align: center; margin-bottom: 2rem;">
-          <h2 style="font-family: var(--font-serif); margin-bottom: 0.5rem;">Welcome Back</h2>
-          <p style="color: #666;">Login to access your orders and wishlist</p>
+    <!-- Added Home Banners (Part 2) -->
+    <section class="home-banners-2" style="padding: 5rem 0 2rem; background-color: var(--bg-color);">
+      <div class="container" style="display: flex; flex-direction: column; gap: 2rem;">
+        <img src="/images/home_ban/6.png" alt="Home Banner 6"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+        <img src="/images/home_ban/7.png" alt="Home Banner 7"
+          style="width: 100%; height: auto; border-radius: 12px; display: block;">
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section" id="newsletter">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <h2>Join the Ed-a-Mamma Family</h2>
+            <p>Get 15% off your first order + exclusive access to new drops and special offers</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Your email address" class="newsletter-input" id="newsletter-email"
+                required />
+              <button type="submit" class="btn btn-primary" id="newsletter-submit">Subscribe</button>
+            </form>
+            <span class="newsletter-note">No spam, ever. Unsubscribe anytime.</span>
+          </div>
         </div>
-        <form id="login-form" class="account-form" style="display: flex; flex-direction: column; gap: 1rem;">
-          <input type="email" placeholder="Email Address" required style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px;" />
-          <input type="password" placeholder="Password" required style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px;" />
-          <button type="submit" class="btn btn-primary btn-block">Login</button>
-          <div style="text-align: center; margin: 0.5rem 0; color: #999; font-size: 0.9rem;">OR</div>
-          <button type="button" class="btn btn-secondary btn-block" id="demo-account-btn" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">Create Demo Session Account</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="/images/logo.jpg" alt="Ed-a-Mamma"
+              style="height: 40px; margin-bottom: 1.5rem; mix-blend-mode: multiply;" />
+          </a>
+          <p class="footer-tagline">Sustainable, nature-inspired clothing for babies, kids, and moms. Designed with
+            love, made with care.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z" />
+                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-column">
+            <h4>About</h4>
+            <ul>
+              <li><a href="/index.html#sustainability">About Us</a></li>
+              <li><a href="/index.html#sustainability">Impact</a></li>
+              <li><a href="/index.html#newsletter">Community</a></li>
+              <li><a href="/collection.html">School Uniform</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Collection</h4>
+            <ul>
+              <li><a href="/collection.html?category=baby">Babies (0–3 yrs)</a></li>
+              <li><a href="/collection.html?category=kids">Kids (2–10 yrs)</a></li>
+              <li><a href="/collection.html?category=maternity">Maternity</a></li>
+              <li><a href="/collection.html?category=new">New Arrivals</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="mailto:support@edamamma.com">FAQ & Contact Us</a></li>
+              <li><a href="/collection.html">Returns & Exchanges</a></li>
+              <li><a href="/collection.html">Track My Order</a></li>
+              <li><a href="/collection.html">Store Locator</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ed-a-Mamma. All rights reserved. Made with 🌿 for a better planet.</p>
+        <div class="payment-icons">
+          <span style="font-weight: bold; margin-right: 10px;">Visa</span>
+          <span style="font-weight: bold; margin-right: 10px;">Mastercard</span>
+          <span style="font-weight: bold; margin-right: 10px;">UPI</span>
+          <span style="font-weight: bold;">PayTM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Account Modal -->
+  <div class="account-overlay" id="account-overlay"></div>
+  <div class="account-modal" id="account-modal">
+    <button class="account-close" id="account-close">&times;</button>
+    <div class="account-content" id="account-login-view">
+      <div class="account-header" style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="font-family: var(--font-serif); margin-bottom: 0.5rem;">Welcome Back</h2>
+        <p style="color: #666;">Login to access your orders and wishlist</p>
+      </div>
+      <form id="login-form" class="account-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <input type="email" placeholder="Email Address" required
+          style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px;" />
+        <input type="password" placeholder="Password" required
+          style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px;" />
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <div style="text-align: center; margin: 0.5rem 0; color: #999; font-size: 0.9rem;">OR</div>
+        <button type="button" class="btn btn-secondary btn-block" id="demo-account-btn"
+          style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">Create Demo Session Account</button>
+      </form>
+    </div>
+
+    <div class="account-content" id="account-profile-view" style="display: none;">
+      <div class="account-header" style="text-align: center; margin-bottom: 2rem;">
+        <div
+          style="width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">
+          D</div>
+        <h2 id="user-display-name" style="font-family: var(--font-serif); margin-bottom: 0.2rem;">Demo User</h2>
+        <p id="user-display-email" style="color: #666; font-size: 0.9rem;">demo@edmamma.com</p>
+      </div>
+      <div class="account-menu" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="#"
+          style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">My
+          Orders <span>❯</span></a>
+        <a href="#"
+          style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">My
+          Wishlist <span>❯</span></a>
+        <a href="#"
+          style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">Saved
+          Addresses <span>❯</span></a>
+        <button class="btn-link" id="logout-btn"
+          style="color: #ff5a5f; text-align: left; padding: 1rem 0.8rem; font-weight: 600;">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="checkout-overlay" id="checkout-overlay"></div>
+  <div class="checkout-modal" id="checkout-modal">
+    <button class="checkout-close" id="checkout-close">&times;</button>
+    <div class="checkout-content">
+      <div class="checkout-header">
+        <h2>Secure Checkout</h2>
+        <div class="checkout-steps">
+          <div class="step active" id="step-dot-1">1</div>
+          <div class="step-line"></div>
+          <div class="step" id="step-dot-2">2</div>
+        </div>
+      </div>
+
+      <!-- Step 1: Shipping -->
+      <div class="checkout-step-content active" id="checkout-step-1">
+        <h3>Shipping Information</h3>
+        <form id="shipping-form" class="checkout-form">
+          <div class="form-group">
+            <input type="text" id="ship-name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="ship-email" placeholder="Email Address" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" id="ship-phone" placeholder="Phone Number" required />
+            <input type="text" id="ship-pincode" placeholder="Pincode" required maxlength="6" />
+          </div>
+          <div class="form-group">
+            <textarea id="ship-address" placeholder="Complete Address (House No, Building, Street, Area)"
+              required></textarea>
+          </div>
+          <div class="form-row">
+            <input type="text" id="ship-city" placeholder="City" required />
+            <input type="text" id="ship-state" placeholder="State" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Continue to Payment</button>
         </form>
       </div>
 
-      <div class="account-content" id="account-profile-view" style="display: none;">
-        <div class="account-header" style="text-align: center; margin-bottom: 2rem;">
-          <div style="width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">D</div>
-          <h2 id="user-display-name" style="font-family: var(--font-serif); margin-bottom: 0.2rem;">Demo User</h2>
-          <p id="user-display-email" style="color: #666; font-size: 0.9rem;">demo@edmamma.com</p>
+      <!-- Step 2: Payment -->
+      <div class="checkout-step-content" id="checkout-step-2">
+        <h3>Select Payment Method</h3>
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="payment" value="upi" checked />
+            <div class="payment-info">
+              <strong>UPI (PhonePe, Google Pay, BHIM)</strong>
+              <span>Pay instantly using any UPI app</span>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="card" />
+            <div class="payment-info">
+              <strong>Credit / Debit Card</strong>
+              <span>Visa, Mastercard, AMEX, RuPay</span>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="cod" />
+            <div class="payment-info">
+              <strong>Cash on Delivery</strong>
+              <span>Pay when you receive your order</span>
+            </div>
+          </label>
         </div>
-        <div class="account-menu" style="display: flex; flex-direction: column; gap: 0.5rem;">
-          <a href="#" style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">My Orders <span>❯</span></a>
-          <a href="#" style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">My Wishlist <span>❯</span></a>
-          <a href="#" style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">Saved Addresses <span>❯</span></a>
-          <button class="btn-link" id="logout-btn" style="color: #ff5a5f; text-align: left; padding: 1rem 0.8rem; font-weight: 600;">Logout</button>
+        <div class="order-summary-mini">
+          <div class="summary-row">
+            <span>Total Amount:</span>
+            <strong id="checkout-total-val">₹0</strong>
+          </div>
         </div>
+        <button class="btn btn-primary btn-block" id="complete-order-btn">Complete Purchase</button>
+        <button class="btn btn-link btn-block" id="back-to-shipping" type="button">Back to Shipping</button>
       </div>
     </div>
+  </div>
 
-    <!-- Checkout Modal -->
-    <div class="checkout-overlay" id="checkout-overlay"></div>
-    <div class="checkout-modal" id="checkout-modal">
-      <button class="checkout-close" id="checkout-close">&times;</button>
-      <div class="checkout-content">
-        <div class="checkout-header">
-          <h2>Secure Checkout</h2>
-          <div class="checkout-steps">
-            <div class="step active" id="step-dot-1">1</div>
-            <div class="step-line"></div>
-            <div class="step" id="step-dot-2">2</div>
-          </div>
-        </div>
-        
-        <!-- Step 1: Shipping -->
-        <div class="checkout-step-content active" id="checkout-step-1">
-          <h3>Shipping Information</h3>
-          <form id="shipping-form" class="checkout-form">
-            <div class="form-group">
-              <input type="text" id="ship-name" placeholder="Full Name" required />
-            </div>
-            <div class="form-group">
-              <input type="email" id="ship-email" placeholder="Email Address" required />
-            </div>
-            <div class="form-row">
-              <input type="tel" id="ship-phone" placeholder="Phone Number" required />
-              <input type="text" id="ship-pincode" placeholder="Pincode" required maxlength="6" />
-            </div>
-            <div class="form-group">
-              <textarea id="ship-address" placeholder="Complete Address (House No, Building, Street, Area)" required></textarea>
-            </div>
-            <div class="form-row">
-              <input type="text" id="ship-city" placeholder="City" required />
-              <input type="text" id="ship-state" placeholder="State" required />
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Continue to Payment</button>
-          </form>
-        </div>
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-message" id="toast-message">Added to cart successfully!</div>
+  </div>
 
-        <!-- Step 2: Payment -->
-        <div class="checkout-step-content" id="checkout-step-2">
-          <h3>Select Payment Method</h3>
-          <div class="payment-options">
-            <label class="payment-option">
-              <input type="radio" name="payment" value="upi" checked />
-              <div class="payment-info">
-                <strong>UPI (PhonePe, Google Pay, BHIM)</strong>
-                <span>Pay instantly using any UPI app</span>
-              </div>
-            </label>
-            <label class="payment-option">
-              <input type="radio" name="payment" value="card" />
-              <div class="payment-info">
-                <strong>Credit / Debit Card</strong>
-                <span>Visa, Mastercard, AMEX, RuPay</span>
-              </div>
-            </label>
-            <label class="payment-option">
-              <input type="radio" name="payment" value="cod" />
-              <div class="payment-info">
-                <strong>Cash on Delivery</strong>
-                <span>Pay when you receive your order</span>
-              </div>
-            </label>
-          </div>
-          <div class="order-summary-mini">
-            <div class="summary-row">
-              <span>Total Amount:</span>
-              <strong id="checkout-total-val">₹0</strong>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-block" id="complete-order-btn">Complete Purchase</button>
-          <button class="btn btn-link btn-block" id="back-to-shipping" type="button">Back to Shipping</button>
-        </div>
-      </div>
-    </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
 
-    <!-- Toast Notification -->
-    <div class="toast-notification" id="toast-notification">
-      <div class="toast-icon">✓</div>
-      <div class="toast-message" id="toast-message">Added to cart successfully!</div>
-    </div>
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
 </html>

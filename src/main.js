@@ -3,11 +3,215 @@ import './style.css';
 // --- Data ---
 const products = [
   {
+    id: 201,
+    name: "Infant Girl Organic Cotton Black Romper",
+    description: "A chic and comfortable organic cotton romper in classic black, featuring a matching headband. Perfect for special outings and easy everyday wear.",
+    details: {
+      "Gender": "Girls",
+      "Product Type": "Romper",
+      "Age Group": "Infant (0-12 Months)",
+      "Primary Material": "100% Organic Cotton",
+      "Sleeve Type": "Sleeveless",
+      "Pattern": "Solid",
+      "Primary Colour": "Black",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Baby Girl"
+    },
+    price: 1499, originalPrice: 1499,
+    discount: "",
+    image: "https://images.pexels.com/photos/33076403/pexels-photo-33076403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "baby-girl",
+    type: "Romper",
+    rating: 4.9,
+    reviews: []
+  },
+  {
+    id: 202,
+    name: "Baby Girl Pink Floral Summer Dress",
+    description: "Brighten up her day with this beautiful pink floral dress. Made from ultra-soft cotton to keep her cool and comfortable during the summer months.",
+    details: {
+      "Gender": "Girls",
+      "Product Type": "Dress",
+      "Age Group": "Infant (6-12 Months)",
+      "Primary Material": "Organic Cotton",
+      "Sleeve Type": "Short Sleeves",
+      "Pattern": "Floral",
+      "Primary Colour": "Pink",
+      "Product Fit": "Regular",
+      "Occasion": "Daywear",
+      "Category": "Baby Girl"
+    },
+    price: 1699, originalPrice: 1699,
+    discount: "",
+    image: "https://images.pexels.com/photos/13914396/pexels-photo-13914396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "baby-girl",
+    type: "Dress",
+    rating: 4.8,
+    reviews: []
+  },
+  {
+    id: 203,
+    name: "Infant Girl Cream Lace Party Romper",
+    description: "An elegant cream lace romper designed for tiny celebrations. Crafted with a soft lining to ensure no irritation on delicate skin.",
+    details: {
+      "Gender": "Girls",
+      "Product Type": "Romper",
+      "Age Group": "Infant (0-6 Months)",
+      "Primary Material": "Lace & Cotton",
+      "Sleeve Type": "Sleeveless",
+      "Pattern": "Lace",
+      "Primary Colour": "Cream",
+      "Product Fit": "Comfort Fit",
+      "Occasion": "Party",
+      "Category": "Baby Girl"
+    },
+    price: 1999, originalPrice: 1999,
+    discount: "",
+    image: "https://images.pexels.com/photos/33016293/pexels-photo-33016293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "baby-girl",
+    type: "Romper",
+    rating: 5.0,
+    reviews: []
+  },
+  {
+    id: 204,
+    name: "Baby Girl Denim Romper with Floral Bow",
+    description: "A trendy blue denim romper accented with a charming floral bow. Durable yet soft, ideal for her little adventures.",
+    details: {
+      "Gender": "Girls",
+      "Product Type": "Romper",
+      "Age Group": "Infant (6-12 Months)",
+      "Primary Material": "Cotton Denim",
+      "Sleeve Type": "Sleeveless",
+      "Pattern": "Denim",
+      "Primary Colour": "Blue",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Baby Girl"
+    },
+    price: 1799, originalPrice: 1799,
+    discount: "",
+    image: "https://images.pexels.com/photos/33016297/pexels-photo-33016297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "baby-girl",
+    type: "Romper",
+    rating: 4.7,
+    reviews: []
+  },
+  {
+    id: 101,
+    name: "Infant Boy Organic Cotton White Romper",
+    description: "Keep your little bean comfortable and breezy with this premium organic cotton white romper. Thoughtfully designed for soft skin and easy movement.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Romper",
+      "Age Group": "Infant (0-12 Months)",
+      "Primary Material": "100% Organic Cotton",
+      "Sleeve Type": "Sleeveless",
+      "Pattern": "Solid",
+      "Primary Colour": "White",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Baby Boy"
+    },
+    price: 1299, originalPrice: 1299,
+    discount: "",
+    image: "/images/indian_baby_boy_1.png",
+    category: "baby-boy",
+    type: "Romper",
+    rating: 4.9,
+    reviews: []
+  },
+  {
+    id: 102,
+    name: "Baby Boy Soft Blue Striped Onesie",
+    description: "A classic striped onesie in soft blue, crafted from breathable cotton for all-day comfort. Perfect for everyday adventures.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Onesie",
+      "Age Group": "Infant (0-12 Months)",
+      "Primary Material": "Organic Cotton",
+      "Sleeve Type": "Half Sleeves",
+      "Pattern": "Striped",
+      "Primary Colour": "Blue",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Baby Boy"
+    },
+    price: 999, originalPrice: 999,
+    discount: "",
+    image: "/images/indian_baby_boy_2.png",
+    category: "baby-boy",
+    type: "Onesie",
+    rating: 4.8,
+    reviews: []
+  },
+  {
+    id: 103,
+    name: "Newborn Boy Knitted Cotton Beige Set",
+    description: "Cozy and elegant, this knitted cotton set in neutral beige is perfect for cooler days. Includes a soft sweater and matching pants.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Clothing Set",
+      "Age Group": "Newborn (0-6 Months)",
+      "Primary Material": "Knitted Cotton",
+      "Sleeve Type": "Full Sleeves",
+      "Pattern": "Knitted",
+      "Primary Colour": "Beige",
+      "Product Fit": "Comfort Fit",
+      "Occasion": "Casual",
+      "Category": "Baby Boy"
+    },
+    price: 2499, originalPrice: 2499,
+    discount: "",
+    image: "/images/indian_baby_boy_3.png",
+    category: "baby-boy",
+    type: "Set",
+    rating: 4.9,
+    reviews: []
+  },
+  {
+    id: 104,
+    name: "Infant Boy Sage Green Footed Sleeper",
+    description: "A peaceful night's sleep awaits in this sage green footed sleeper. Crafted from ultra-soft organic cotton with a focus on comfort.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Sleeper",
+      "Age Group": "Infant (0-12 Months)",
+      "Primary Material": "100% Organic Cotton",
+      "Sleeve Type": "Full Sleeves",
+      "Pattern": "Solid",
+      "Primary Colour": "Sage Green",
+      "Product Fit": "Regular",
+      "Occasion": "Sleepwear",
+      "Category": "Baby Boy"
+    },
+    price: 1599, originalPrice: 1599,
+    discount: "",
+    image: "/images/indian_baby_boy_4.png",
+    category: "baby-boy",
+    type: "Sleeper",
+    rating: 5.0,
+    reviews: []
+  },
+  {
     id: 1,
-    name: "Boys Abstract Printed Shirt & Cargo Pants Set",
+    name: "Boys Olive All-Over Print Cotton Shirt",
+    description: "Designed for little explorers with curious imaginations, this olive printed cotton shirt brings a playful outdoor-inspired charm to everyday dressing. Crafted from breathable cotton fabric, the lightweight silhouette keeps movement easy through casual outings, creative afternoons, and weekend adventures. The nature-inspired all-over print adds a fresh relaxed feel to this everyday essential.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Half Sleeves Shirt",
+      "Age Group": "Kids",
+      "Primary Material": "Cotton",
+      "Pattern": "All Over Printed",
+      "Primary Colour": "Olive",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Shirts"
+    },
     price: 2599, originalPrice: 2599,
     discount: "",
-    image: "/images/boy1.png",
+    image: "/images/indian_boy_1.png",
     images: [
       "/images/boy1.png",
       "/images/product_boys_abstract_1.jpg",
@@ -32,10 +236,22 @@ const products = [
   },
   {
     id: 3,
-    name: "Boys White Graphic Shirt & Red Shorts Set",
+    name: "Boys Red Woven Cotton Shorts",
+    description: "Made for little beans always on the move, these red woven cotton shorts bring a playful burst of colour to everyday dressing. Crafted from breathable cotton fabric, the relaxed silhouette keeps movement easy through outdoor play, creative afternoons, and casual outings. The utility-inspired pockets and adjustable drawstring waist add both comfort and functionality to this everyday essential.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Woven Shorts",
+      "Age Group": "Kids",
+      "Primary Material": "Cotton",
+      "Pattern": "Solid",
+      "Primary Colour": "Red",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Shorts"
+    },
     price: 2399, originalPrice: 2399,
     discount: "",
-    image: "/images/boy2.png",
+    image: "/images/indian_boy_2.png",
     images: [
       "/images/boy2.png",
       "/images/product_boys_shorts_1.jpg",
@@ -56,7 +272,21 @@ const products = [
   },
   {
     id: 6,
-    name: "Boys Pack of 2 Graphic Cotton Tees - Red & Yellow",
+    name: "Boys Graphic Printed Cotton T-Shirt Pack of 2",
+    description: "Keep your little bean ready for every playful moment with this graphic printed cotton T-shirt pack of 2. Crafted from soft breathable cotton, these regular-fit crew neck tees are designed for easy everyday dressing, active playtime, weekend outings, and comfortable all-day wear.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Regular T-Shirts",
+      "Age Group": "Kids",
+      "Primary Material": "Cotton",
+      "Neck Type": "Crew Neck",
+      "Sleeve Type": "Half Sleeves",
+      "Pattern": "Printed",
+      "Primary Colour": "Multi",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Boys T-Shirts"
+    },
     price: 1599, originalPrice: 1599,
     discount: "",
     image: "/images/boy3.png",
@@ -80,10 +310,22 @@ const products = [
   },
   {
     id: 7,
-    name: "Boys Beige Tunic & Denim Jeans Set",
+    name: "Boys Dark Blue Straight-Fit Cotton Jeans",
+    description: "Made for little beans always on the move, these dark blue straight-fit jeans bring together everyday comfort with easy utility styling. The functional pockets add a playful utility touch for little everyday essentials. Designed with azo-free dyes, nickel-free trims, and planet-friendly plastic-free buttons, the fabric feels gentle on delicate skin.",
+    details: {
+      "Gender": "Boys",
+      "Product Type": "Straight-Fit Jeans",
+      "Age Group": "Kids",
+      "Primary Material": "Cotton",
+      "Pattern": "Washed",
+      "Primary Colour": "Dark Blue",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Jeans"
+    },
     price: 2999, originalPrice: 2999,
     discount: "",
-    image: "/images/boy4.png",
+    image: "/images/indian_boy_4.png",
     images: [
       "/images/boy4.png",
       "/images/product_boys_beige_1.jpg",
@@ -102,26 +344,25 @@ const products = [
       { user: "Sameer H.", rating: 4, date: "2024-03-05", comment: "Elegant yet casual. The denim has a great fit." }
     ]
   },
-  {
-    id: 2,
-    name: "Infant Girls Flared Printed Romper - Orange",
-    price: 1199, originalPrice: 1199,
-    discount: "",
-    image: "/images/product_girl_romper.png",
-    category: "baby",
-    type: "Romper",
-    rating: 4.5,
-    reviews: [
-      { user: "Anjali K.", rating: 5, date: "2024-04-10", comment: "Beautiful design and very comfortable for my baby girl." },
-      { user: "Sneha P.", rating: 4, date: "2024-03-20", comment: "Lovely romper, but slightly large for my 6-month-old. She'll grow into it!" }
-    ]
-  },
+
   {
     id: 43,
-    name: "Girls Pink & Orange Tie-Dye Smocked Dress",
+    name: "Girls Tie-Dye Sleeveless smocked dress",
+    description: "Add a splash of colour to your little bean’s wardrobe with this cheerful tie-dye sleeveless dress, thoughtfully designed for easy movement and lightweight everyday comfort. Crafted in soft breathable rayon fabric, the airy silhouette keeps dressing effortless through vacations, birthday celebrations, creative afternoons, and warm-weather outings.",
+    details: {
+      "Product Type": "Sleeveless Dress",
+      "Category": "Girls Dresses",
+      "Age Group": "Kids",
+      "Primary Material": "Rayon",
+      "Sleeve Type": "Sleeveless",
+      "Neck Type": "Square Neck",
+      "Colour": "Sunset Pink",
+      "Fit": "Regular Fit",
+      "Occasion": "Casual Wear"
+    },
     price: 1799, originalPrice: 1799,
     discount: "",
-    image: "/images/girl1.jpg",
+    image: "/images/indian_girl_1.png",
     images: [
       "/images/girl1.jpg",
       "/images/product_girl_dress_1.jpg",
@@ -140,26 +381,26 @@ const products = [
       { user: "Aditi R.", rating: 5, date: "2024-05-25", comment: "The tie-dye is so vibrant! Perfect for summer." }
     ]
   },
-  {
-    id: 5,
-    name: "Infant Girls Dress - White Lace",
-    price: 1999, originalPrice: 1999,
-    discount: "",
-    image: "/images/product_girl_dress.png",
-    category: "baby",
-    type: "Dress",
-    rating: 4.9,
-    reviews: [
-      { user: "Sonia L.", rating: 5, date: "2024-04-12", comment: "Absolutely stunning dress for special occasions. The lace is very delicate." },
-      { user: "Karan B.", rating: 5, date: "2024-04-01", comment: "My daughter looked like a little angel in this dress. Highly recommended!" }
-    ]
-  },
+
   {
     id: 44,
-    name: "Girls Floral Embroidered Scalloped Co-ord Set",
+    name: "Girls Embroidered Off-White Co-Ord Set",
+    description: "Delicate embroidery and soft neutral tones come together in this elegant off-white co-ord set designed for effortless everyday dressing. Crafted from breathable cotton fabric, the coordinated silhouette feels light, airy, and comfortable while adding a graceful charm to special outings and elevated casual moments.",
+    details: {
+      "Gender": "Girls",
+      "Age Group": "Kids",
+      "Primary Material": "Cotton",
+      "Sleeve Type": "Half",
+      "Neck Type": "Round Neck",
+      "Pattern": "Embroidered",
+      "Primary Colour": "Off-White",
+      "Product Fit": "Regular",
+      "Occasion": "Casual",
+      "Category": "Clothing Sets"
+    },
     price: 2999, originalPrice: 2999,
     discount: "",
-    image: "/images/girl2.jpg",
+    image: "/images/indian_girl_2.png",
     images: [
       "/images/girl2.jpg",
       "/images/product_girl_coord_1.jpg",
@@ -180,10 +421,22 @@ const products = [
   },
   {
     id: 45,
-    name: "Girls Palm Embroidered Shirt & Heart Print Jeans",
+    name: "Girls Heart Print Wide-Leg Jeans",
+    description: "Easy, playful, and effortlessly cool, these wide-leg jeans bring a relaxed update to everyday dressing. Designed in soft cotton denim with subtle heart print detailing, the comfort-fit silhouette allows easy movement while adding a cheerful touch to casual wardrobes. Perfect for pairing with lightweight shirts, graphic tees, and everyday layers.",
+    details: {
+      "Gender": "Girls",
+      "Product Type": "Jeans",
+      "Category": "Girls Denim Jeans",
+      "Age Group": "Kids",
+      "Primary Material": "Cotton",
+      "Pattern": "Solid",
+      "Colour": "Mid Blue",
+      "Fit": "Comfort Fit",
+      "Occasion": "Casual Wear"
+    },
     price: 2599, originalPrice: 2599,
     discount: "",
-    image: "/images/girl3.jpg",
+    image: "/images/indian_girl_3.png",
     images: [
       "/images/girl3.jpg",
       "/images/product_girl_jeans_1.jpg",
@@ -204,7 +457,20 @@ const products = [
   },
   {
     id: 46,
-    name: "Girls Yellow Ruffled Top & Denim Jeans Set",
+    name: "Girls Yellow Sunshine Layered Cotton Strappy Top",
+    description: "Add a little sunshine to your little bean’s wardrobe with this cheerful layered cotton strappy top, thoughtfully designed for breezy comfort, easy movement, and playful everyday dressing.",
+    details: {
+      "Gender": "Girls",
+      "Product Type": "Strappy Top",
+      "Category": "Girls Cotton Tops",
+      "Age Group": "Kids",
+      "Primary Material": "100% Cotton",
+      "Sleeve Type": "Sleeveless",
+      "Pattern": "Solid",
+      "Colour": "Sunshine Yellow",
+      "Fit": "Regular Fit",
+      "Occasion": "Casual Wear"
+    },
     price: 2199, originalPrice: 2199,
     discount: "",
     image: "/images/girl4.jpg",
@@ -409,102 +675,6 @@ const products = [
     rating: 4.9,
     reviews: [
       { user: "Vikram S.", rating: 5, date: "2024-05-22", comment: "Perfect gift for a baby shower. The quality is top-notch." }
-    ]
-  },
-  {
-    id: 39,
-    name: "Girls Pink & Orange Tie-Dye Smocked Dress",
-    price: 1799, originalPrice: 1799,
-    discount: "",
-    image: "/images/girl1.jpg",
-    images: [
-      "/images/girl1.jpg",
-      "/images/product_girl_dress_1.jpg",
-      "/images/product_girl_dress_2.jpg",
-      "/images/product_girl_dress_3.jpg"
-    ],
-    category: "baby-girl",
-    pdpBanners: [
-      "/images/banner_girl_1_1.png",
-      "/images/banner_girl_1_2.png",
-      "/images/banner_girl_1_3.png"
-    ],
-    type: "Dress",
-    rating: 4.8,
-    reviews: [
-      { user: "Aditi R.", rating: 5, date: "2024-05-25", comment: "The tie-dye is so vibrant! Perfect for summer." }
-    ]
-  },
-  {
-    id: 40,
-    name: "Girls Floral Embroidered Scalloped Co-ord Set",
-    price: 2999, originalPrice: 2999,
-    discount: "",
-    image: "/images/girl2.jpg",
-    images: [
-      "/images/girl2.jpg",
-      "/images/product_girl_coord_1.jpg",
-      "/images/product_girl_coord_2.jpg",
-      "/images/product_girl_coord_3.jpg"
-    ],
-    category: "baby-girl",
-    pdpBanners: [
-      "/images/banner_girl_2_1.png",
-      "/images/banner_girl_2_2.png",
-      "/images/banner_girl_2_3.png"
-    ],
-    type: "Set",
-    rating: 4.9,
-    reviews: [
-      { user: "Neha G.", rating: 5, date: "2024-05-28", comment: "Absolutely elegant. The embroidery is very detailed." }
-    ]
-  },
-  {
-    id: 41,
-    name: "Girls Palm Embroidered Shirt & Heart Print Jeans",
-    price: 2599, originalPrice: 2599,
-    discount: "",
-    image: "/images/girl3.jpg",
-    images: [
-      "/images/girl3.jpg",
-      "/images/product_girl_jeans_1.jpg",
-      "/images/product_girl_jeans_2.jpg",
-      "/images/product_girl_jeans_3.jpg"
-    ],
-    category: "baby-girl",
-    pdpBanners: [
-      "/images/banner_girl_3_1.png",
-      "/images/banner_girl_3_2.png",
-      "/images/banner_girl_3_3.png"
-    ],
-    type: "Set",
-    rating: 4.7,
-    reviews: [
-      { user: "Sonal V.", rating: 5, date: "2024-05-30", comment: "Love the heart print on the jeans. Very cute set." }
-    ]
-  },
-  {
-    id: 42,
-    name: "Girls Yellow Ruffled Top & Denim Jeans Set",
-    price: 2199, originalPrice: 2199,
-    discount: "",
-    image: "/images/girl4.jpg",
-    images: [
-      "/images/girl4.jpg",
-      "/images/product_girl_yellow_1.jpg",
-      "/images/product_girl_yellow_2.jpg",
-      "/images/product_girl_yellow_3.jpg"
-    ],
-    category: "baby-girl",
-    pdpBanners: [
-      "/images/banner_girl_4_1.png",
-      "/images/banner_girl_4_2.png",
-      "/images/banner_girl_4_3.png"
-    ],
-    type: "Set",
-    rating: 4.8,
-    reviews: [
-      { user: "Kriti M.", rating: 4, date: "2024-06-01", comment: "The yellow top is very cheerful. Fits perfectly." }
     ]
   },
   {
@@ -941,7 +1111,7 @@ const init = () => {
           <div class="cart-item">
             <img src="${item.image}" class="cart-item-img" alt="${item.name}">
             <div class="cart-item-info">
-              <div class="cart-item-title">${item.name}</div>
+              <div class="cart-item-title">${item.name}${item.selectedSize && item.selectedSize !== 'N/A' ? ` <span style="font-size:0.75rem; color:#666;">(${item.selectedSize})</span>` : ''}</div>
               <div class="cart-item-price">${formatCurrency(item.price)}</div>
               <div class="cart-item-controls">
                 <button class="cart-qty-btn" onclick="updateQty(${index}, -1)">-</button>
@@ -1616,8 +1786,11 @@ const init = () => {
       filteredProducts = products.filter(p => p.category === 'boys' || p.category === 'girls');
       title = "Kids Collection";
     } else if (category === 'baby-boy') {
-      filteredProducts = products.filter(p => p.category === 'boys');
+      filteredProducts = products.filter(p => p.category === 'baby-boy');
       title = "Baby Boy Collection";
+    } else if (category === 'baby-girl') {
+      filteredProducts = products.filter(p => p.category === 'baby-girl');
+      title = "Baby Girl Collection";
     } else if (category === 'nursery') {
       filteredProducts = products.filter(p => p.category === 'nursery');
       title = "Nursery Collection";
@@ -1692,6 +1865,7 @@ const init = () => {
   if (window.location.pathname.includes('product')) {
     const urlParams = new URLSearchParams(window.location.search);
     let productId = parseInt(urlParams.get('id'));
+    let selectedSize = null;
 
     // Fallback to first product if accessed directly without an ID
     if (isNaN(productId)) {
@@ -1800,14 +1974,23 @@ const init = () => {
                 b.style.borderColor = '#e5e7eb';
                 b.style.background = '#fff';
                 b.style.color = '#4b5563';
+                b.style.boxShadow = 'none';
               });
               btn.style.borderColor = '#ff5a5f';
               btn.style.background = '#fde8e8';
               btn.style.color = '#ff5a5f';
+              btn.style.boxShadow = '0 0 0 2px rgba(255, 90, 95, 0.1)';
+              selectedSize = btn.textContent;
+              
+              // Reset error state if any
+              const sizeHeader = sizesContainer.querySelector('.size-header strong');
+              if (sizeHeader) sizeHeader.style.color = '#333';
+              sizesGrid.style.animation = 'none';
             });
           });
         } else {
           sizesContainer.style.display = 'none';
+          selectedSize = 'N/A'; // For non-apparel
         }
       }
 
@@ -1821,11 +2004,13 @@ const init = () => {
             <p style="font-size: 0.85rem; color: #4b5563; line-height: 1.5;">${product.description || `Experience the ultimate blend of style and sustainability with this ${product.name}. Crafted with care for the planet and your comfort.`}</p>
           </div>
           <div style="margin-bottom: 1.5rem;">
-            <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: #1a1a1a;">${isApparel ? 'Fabric & Fit' : 'Materials & Quality'}</h4>
+            <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: #1a1a1a;">${product.details ? 'Product Details' : (isApparel ? 'Fabric & Fit' : 'Materials & Quality')}</h4>
             <ul style="font-size: 0.85rem; color: #4b5563; line-height: 1.6; list-style: disc; padding-left: 1.25rem;">
-              <li><strong>${isApparel ? 'Material' : 'Build'}:</strong> ${isApparel ? '100% GOTS Organic Cotton' : 'Eco-friendly, Child-safe materials'}</li>
-              <li><strong>${isApparel ? 'Fit' : 'Safety'}:</strong> ${isApparel ? 'Breathable comfort fit' : 'Lead-free, Non-toxic finishes'}</li>
-              <li><strong>Care:</strong> ${isApparel ? 'Gentle machine wash cold' : 'Wipe clean with a damp cloth'}</li>
+              ${product.details ? Object.entries(product.details).map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`).join('') : `
+                <li><strong>${isApparel ? 'Material' : 'Build'}:</strong> ${isApparel ? '100% GOTS Organic Cotton' : 'Eco-friendly, Child-safe materials'}</li>
+                <li><strong>${isApparel ? 'Fit' : 'Safety'}:</strong> ${isApparel ? 'Breathable comfort fit' : 'Lead-free, Non-toxic finishes'}</li>
+                <li><strong>Care:</strong> ${isApparel ? 'Gentle machine wash cold' : 'Wipe clean with a damp cloth'}</li>
+              `}
             </ul>
           </div>
           <div style="margin-bottom: 0;">
@@ -1923,12 +2108,34 @@ const init = () => {
 
       if (addToCartBtn) {
         addToCartBtn.addEventListener('click', () => {
+          const apparelCategories = ['boys', 'girls', 'baby', 'maternity', 'kids', 'baby-boy', 'baby-girl'];
+          const isApparel = apparelCategories.includes(product.category);
+          
+          if (isApparel && !selectedSize) {
+            // Highlight size section
+            const sizesContainer = document.getElementById('pd-sizes-container');
+            const sizesGrid = document.getElementById('pd-size-options');
+            if (sizesContainer) {
+              const sizeHeader = sizesContainer.querySelector('.size-header strong');
+              if (sizeHeader) {
+                sizeHeader.style.color = '#ff5a5f';
+                sizeHeader.style.transition = 'color 0.3s';
+              }
+              if (sizesGrid) {
+                sizesGrid.style.animation = 'shake 0.5s cubic-bezier(.36,.07,.19,.97) both';
+                setTimeout(() => { sizesGrid.style.animation = ''; }, 500);
+              }
+            }
+            showToast("Please select an age / size first!", "error");
+            return;
+          }
+
           const qty = qtyInput ? parseInt(qtyInput.value) : 1;
-          const existing = cart.find(item => item.id === product.id);
+          const existing = cart.find(item => item.id === product.id && item.selectedSize === selectedSize);
           if (existing) {
             existing.quantity += qty;
           } else {
-            cart.push({ ...product, quantity: qty });
+            cart.push({ ...product, quantity: qty, selectedSize: selectedSize });
           }
           updateCartUI();
           showToast();
