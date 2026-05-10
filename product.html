@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product | Ed-a-Mamma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+
+<body class="product-page">
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-content">
+      <span>🌿 Free Shipping on orders above ₹999 | Use code <strong>NATURE20</strong> for 20% off</span>
+    </div>
+    <button class="announcement-close" id="announcement-close" aria-label="Close announcement">&times;</button>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header"
+    style="position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 900; border-bottom: 1px solid var(--border);">
+    <div class="header-inner">
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="/" class="logo" id="logo">
+        <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 40px; width: auto; mix-blend-mode: multiply;" />
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/collection.html" class="nav-link">All Category</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=baby" class="nav-link">Baby</a>
+            <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  Baby Boy
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=baby-boy&type=romper">Onesies & Rompers</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=tshirt">T-shirts & Sweatshirts</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=shirt">Shirts</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=bottom">Bottomwear</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=set">Clothing Sets</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=jacket">Jackets & Sweater</a></li>
+                  <li><a href="/collection.html?category=baby-boy&type=gift">Gift Sets</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  Baby Girl
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=baby-girl&type=romper">Onesies & Rompers</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=top">Tops & Tees</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=dress">Dresses</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=bottom">Bottomwear</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=set">Clothing Sets</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=jacket">Jackets & Sweater</a></li>
+                  <li><a href="/collection.html?category=baby-girl&type=hair">Hair Accessories</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/teddy_balloons.png" alt="Baby Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=kids" class="nav-link">Kids</a>
+            <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #5fb1d3; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  Boys Clothing
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=boys&type=tshirt">T-Shirts</a></li>
+                  <li><a href="/collection.html?category=boys&type=shirt">Shirts</a></li>
+                  <li><a href="/collection.html?category=boys&type=jeans">Jeans</a></li>
+                  <li><a href="/collection.html?category=boys&type=trousers">Trousers & Joggers</a></li>
+                  <li><a href="/collection.html?category=boys&type=shorts">Shorts</a></li>
+                  <li><a href="/collection.html?category=boys&type=set">Co-ord Sets</a></li>
+                  <li><a href="/collection.html?category=boys&type=sweaters">Sweaters & Jackets</a></li>
+                  <li><a href="/collection.html?category=boys&type=sweatshirts">Sweatshirts</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6M6.6 9h12l-1.3 5H8L6.6 9z" />
+                  </svg>
+                  Girls Clothing
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=girls&type=tops">Tops & Tees</a></li>
+                  <li><a href="/collection.html?category=girls&type=dress">Dresses</a></li>
+                  <li><a href="/collection.html?category=girls&type=set">Co-ords & Jumpsuits</a></li>
+                  <li><a href="/collection.html?category=girls&type=jeans">Jeans Joggers & Trousers</a></li>
+                  <li><a href="/collection.html?category=girls&type=shorts">Shorts, Skirts & Skorts</a></li>
+                  <li><a href="/collection.html?category=girls&type=jackets">Jackets & Sweaters</a></li>
+                  <li><a href="/collection.html?category=girls&type=hair">Hair Accessories</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #ff6600; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="20" r="2" />
+                    <circle cx="17" cy="20" r="2" />
+                    <path d="M5 2h2l1.6 7H19l1.4-6h1.6" />
+                  </svg>
+                  Toy Story
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=toy-story-x-ed-a-mamma">Toy Story × Ed‑a‑Mamma</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/kids_playing.png" alt="Kids Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=maternity" class="nav-link">Maternity</a>
+            <div class="mega-dropdown" style="width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4
+                  style="display: flex; align-items: center; gap: 0.5rem; color: #f7a8b8; font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0V15m-3-3h6" />
+                  </svg>
+                  Maternity Wear
+                </h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=maternity&type=topwear">Topwear</a></li>
+                  <li><a href="/collection.html?category=maternity&type=bottomwear">Bottomwear</a></li>
+                  <li><a href="/collection.html?category=maternity&type=dresses">Dresses</a></li>
+                  <li><a href="/collection.html?category=maternity&type=coords">Co-ords</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/maternity_illustration.png" alt="Maternity Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=personal-care" class="nav-link">Personal Care</a>
+            <div class="mega-dropdown"
+              style="left: auto; right: 0; transform: translateY(10px); width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  Bath & Body Care</h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=personal-care&type=rash-balm">Anti - Rash Balm</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=lotion">Lotion</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=powder">Talc Free Powder</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=wash">Baby Wash</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=oil">Massage Oil</a></li>
+                  <li><a href="/collection.html?category=personal-care&type=travel">Travel Kit</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  Hygiene Essentials</h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=personal-care&type=wipes">Wet Wipes</a></li>
+                </ul>
+
+                <h4
+                  style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 2rem;">
+                  Laundery Care</h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=personal-care&type=detergent">Detergent</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/personal_care_illustration.png" alt="Personal Care Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="/collection.html?category=toys" class="nav-link">Toys</a>
+            <div class="mega-dropdown"
+              style="left: auto; right: 0; transform: translateY(10px); width: 750px; padding: 1.5rem 2rem; gap: 2rem;">
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  Toys</h4>
+                <ul
+                  style="gap: 0.8rem; margin-top: 1rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 500;">
+                  <li><a href="/collection.html?category=toys&type=plushies">Plushies</a></li>
+                  <li><a href="/collection.html?category=toys&type=wooden-toys">Wooden Toys</a></li>
+                  <li><a href="/collection.html?category=toys&type=dolls">Dolls</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <h4 style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase;">
+                  <a href="/collection.html?category=gift-sets" style="color: inherit; text-decoration: none;">Gift
+                    Sets</a>
+                </h4>
+                <h4
+                  style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 1.5rem;">
+                  <a href="/collection.html?category=blankets-cushions"
+                    style="color: inherit; text-decoration: none;">Blankets & Cushions</a>
+                </h4>
+                <h4
+                  style="color: var(--text-color); font-weight: 700; border-bottom: none; text-transform: uppercase; margin-top: 1.5rem;">
+                  <a href="/collection.html?category=books" style="color: inherit; text-decoration: none;">Books</a>
+                </h4>
+              </div>
+
+              <div class="dropdown-featured"
+                style="flex: 1.5; display: flex; justify-content: center; align-items: center; background: none;">
+                <img src="/images/toys_illustration.png" alt="Toys Collection"
+                  style="max-height: 220px; width: auto; object-fit: contain; border-radius: 0;" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="header-icon" id="search-toggle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg></button>
+        <button class="header-icon" id="wishlist-toggle" aria-label="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.3l7.8-7.8 1-1.1a5.5 5.5 0 0 0 0-7.8z" />
+          </svg>
+          <span class="badge" id="wishlist-count">0</span>
+        </button>
+        <button class="header-icon" aria-label="Account" id="account-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </button>
+        <button class="header-icon cart-icon" id="cart-toggle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+          </svg>
+          <span class="badge" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawers -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 30px; width: auto;" />
+      <button class="drawer-close" id="drawer-close">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <ul class="mobile-nav-list">
+        <li><a href="/collection.html">All Category</a></li>
+        <li><a href="/collection.html?category=baby">Baby Collection</a></li>
+        <li><a href="/collection.html?category=kids">Kids Collection</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3><button class="cart-close" id="cart-close">&times;</button>
+    </div>
+    <div class="cart-body" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div>
+      <p class="cart-tax-note">Shipping & taxes calculated at checkout.</p>
+      <button class="btn btn-primary btn-block" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="wishlist-drawer-overlay"></div>
+  <div class="cart-drawer" id="wishlist-drawer" style="background: #fdf2f3;">
+    <div class="cart-header">
+      <h3>Your Wishlist</h3>
+      <button class="cart-close" id="wishlist-close">&times;</button>
+    </div>
+    <div class="cart-body" id="wishlist-items">
+      <div class="empty-cart-message">Your wishlist is empty. Start adding products you love!</div>
+    </div>
+    <div class="cart-footer">
+      <a href="/collection.html" class="btn btn-primary btn-block">Continue Shopping</a>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div class="quickview-overlay" id="size-guide-overlay" style="z-index: 2000;"></div>
+  <div class="quickview-modal" id="size-guide-modal" style="z-index: 2100; max-width: 600px; padding: 2.5rem;">
+    <button class="quickview-close" id="size-guide-close">&times;</button>
+    <div class="size-guide-content">
+      <h2 style="font-family: var(--font-serif); margin-bottom: 1.5rem; text-align: center;">Size Guide</h2>
+      <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.9rem;">Measurements are in centimeters (cm). This is a general guide for Ed-a-Mamma kids clothing.</p>
+      
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+          <thead>
+            <tr style="background: #f8fafc; border-bottom: 2px solid #e5e7eb;">
+              <th style="padding: 1rem; text-align: left;">Age</th>
+              <th style="padding: 1rem; text-align: left;">Height</th>
+              <th style="padding: 1rem; text-align: left;">Chest</th>
+              <th style="padding: 1rem; text-align: left;">Waist</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">4-5Y</td>
+              <td style="padding: 0.8rem;">104-110</td>
+              <td style="padding: 0.8rem;">56-58</td>
+              <td style="padding: 0.8rem;">53-54</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">5-6Y</td>
+              <td style="padding: 0.8rem;">110-116</td>
+              <td style="padding: 0.8rem;">58-60</td>
+              <td style="padding: 0.8rem;">54-55</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">6-7Y</td>
+              <td style="padding: 0.8rem;">116-122</td>
+              <td style="padding: 0.8rem;">60-62</td>
+              <td style="padding: 0.8rem;">55-56</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">7-8Y</td>
+              <td style="padding: 0.8rem;">122-128</td>
+              <td style="padding: 0.8rem;">62-64</td>
+              <td style="padding: 0.8rem;">56-57</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">8-9Y</td>
+              <td style="padding: 0.8rem;">128-134</td>
+              <td style="padding: 0.8rem;">64-67</td>
+              <td style="padding: 0.8rem;">57-59</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">9-10Y</td>
+              <td style="padding: 0.8rem;">134-140</td>
+              <td style="padding: 0.8rem;">67-70</td>
+              <td style="padding: 0.8rem;">59-61</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e5e7eb;">
+              <td style="padding: 0.8rem;">11-12Y</td>
+              <td style="padding: 0.8rem;">146-152</td>
+              <td style="padding: 0.8rem;">75-78</td>
+              <td style="padding: 0.8rem;">64-66</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.8rem;">13-14Y</td>
+              <td style="padding: 0.8rem;">158-164</td>
+              <td style="padding: 0.8rem;">82-85</td>
+              <td style="padding: 0.8rem;">69-71</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div style="margin-top: 2rem; background: #fff5f5; padding: 1rem; border-radius: 8px;">
+        <p style="font-size: 0.8rem; color: #ff5a5f; line-height: 1.4;"><strong>Pro Tip:</strong> if your child is between sizes, we recommend choosing the larger size for a more comfortable fit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Product Layout -->
+  <main class="single-product-main">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs professional-breadcrumbs">
+        <a href="/">Home</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+        <a href="/collection.html" id="pd-breadcrumb-cat">Collection</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+        <span id="pd-breadcrumb-title" class="breadcrumb-current">Product</span>
+      </div>
+
+      <div class="product-detail-layout professional-layout">
+
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+          <div class="gallery-thumbnails" id="gallery-thumbnails">
+            <!-- Thumbnails injected via JS, fallback for now -->
+            <div class="thumbnail active" id="pd-thumb-1-wrap"><img src="" id="pd-thumb-1" alt="Thumb"></div>
+            <div class="thumbnail" id="pd-thumb-2-wrap"><img src="/images/product_partywear.png" id="pd-thumb-2"
+                alt="Thumb"></div>
+            <div class="thumbnail" id="pd-thumb-3-wrap"><img src="/images/product_boy_jeans.png" id="pd-thumb-3"
+                alt="Thumb"></div>
+          </div>
+          <div class="main-image-wrapper">
+            <div class="pd-main-slider" id="pd-main-slider" style="display: flex; transition: transform 0.5s ease; height: 100%;">
+              <img src="" id="pd-main-image" alt="Product Image" style="flex: 0 0 100%; width: 100%; object-fit: cover;" />
+            </div>
+            <div class="pd-badge" id="pd-discount-badge"></div>
+            
+            <!-- Slider Navigation -->
+            <button class="slider-nav-btn prev" id="pd-slider-prev" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-nav-btn next" id="pd-slider-next" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <button class="zoom-btn" aria-label="Zoom image">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Product Info (Sticky Sidebar) -->
+        <div class="product-info-panel professional-panel">
+          <div class="panel-inner-sticky">
+
+            <a href="#reviews-section" class="pd-reviews-anchor" style="text-decoration: none; display: inline-block;">
+              <div class="pd-reviews" id="pd-reviews-top" style="cursor: pointer;">
+                <div class="stars" id="pd-stars-top"></div>
+                <span class="review-count" id="pd-count-top"></span>
+              </div>
+            </a>
+
+            <h1 class="pd-title" id="pd-title"
+              style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 2rem; color: #1a1a1a;">Product
+              Name</h1>
+
+            <div class="pd-price-wrap" style="margin-bottom: 2rem;">
+              <div style="font-size: 1.25rem; font-weight: 500; color: #1a1a1a; margin-bottom: 0.25rem;">MRP : <span
+                  id="pd-price">₹0</span></div>
+              <span style="font-size: 0.85rem; color: #666;">Price inclusive of all the taxes</span>
+            </div>
+
+            <div class="pd-sizes" id="pd-sizes-container" style="margin-bottom: 2rem;">
+              <div class="size-header"
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <strong style="font-size: 1rem; color: #333;">Select Size :</strong>
+                <a href="#" class="size-chart-link"
+                  style="color: #ff5a5f; text-decoration: none; font-size: 0.9rem; font-weight: 500;">Size Guide</a>
+              </div>
+              <div class="size-options" id="pd-size-options"
+                style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem;">
+                <!-- Sizes injected via JS -->
+              </div>
+            </div>
+
+            <div class="pd-actions" style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+              <button class="btn" id="pd-add-to-cart"
+                style="flex: 1; height: 52px; background: #fde8e8; color: #1a1a1a; border: none; border-radius: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;">
+                ADD TO BAG
+              </button>
+              <button class="wishlist-btn"
+                style="width: 52px; height: 52px; border-radius: 50%; background: #fde8e8; border: none; display: flex; align-items: center; justify-content: center; color: #ff5a5f; cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="pd-trust-row"
+              style="display: flex; gap: 2rem; padding: 1.5rem 0; border-top: 1px solid #f3f4f6; margin-bottom: 2rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="color: #ff5a5f;">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
+                </div>
+                <div style="font-size: 0.8rem; line-height: 1.2;">
+                  <strong style="color: #1a1a1a;">FREE SHIPPING</strong><br />
+                  <span style="color: #6b7280;">on orders above 999</span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="color: #ff5a5f;">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 14 4 9l5-5" />
+                    <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />
+                  </svg>
+                </div>
+                <div style="font-size: 0.8rem; line-height: 1.2;">
+                  <strong style="color: #1a1a1a;">EASY RETURNS</strong><br />
+                  <span style="color: #6b7280;">30 day return policy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pd-delivery-check" style="margin-bottom: 2rem;">
+              <label style="font-size: 0.9rem; color: #374151; display: block; margin-bottom: 0.75rem;">Check delivery
+                time</label>
+              <div
+                style="display: flex; border: 1px solid #fde8e8; border-radius: 8px; overflow: hidden; height: 48px;">
+                <input type="text" id="pd-pincode-input" placeholder="Enter Pincode" maxlength="6"
+                  style="flex: 1; border: none; padding: 0 1.25rem; outline: none; font-size: 0.95rem;">
+                <button id="pd-pincode-btn"
+                  style="background: #fff; border: none; color: #ff5a5f; padding: 0 1.25rem; font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg> Check
+                </button>
+              </div>
+              <div id="pd-pincode-result" style="margin-top: 0.5rem; font-size: 0.85rem; font-weight: 500; min-height: 1.2rem;"></div>
+            </div>
+
+            <div class="pd-more-info"
+              style="margin-bottom: 3rem; background: #fde8e8; border-radius: 12px; overflow: hidden;">
+              <button class="accordion-trigger" id="pd-info-trigger"
+                style="width: 100%; height: 52px; background: none; border: none; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; color: #1a1a1a; font-size: 1rem;">
+                More Information
+                <svg id="pd-info-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s;">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              <div id="pd-info-content"
+                style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; padding: 0 1.5rem;">
+                <div style="padding: 1rem 0 1.5rem;" id="pd-description-content">
+                  <!-- Description injected via JS -->
+                </div>
+              </div>
+            </div>
+
+            <div class="pd-why-love" style="text-align: center; padding-top: 1rem;">
+              <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: #1a1a1a; margin-bottom: 2.5rem;">Why
+                we love it</h3>
+              <div style="display: flex; justify-content: space-between; gap: 1rem;">
+                <div style="flex: 1;">
+                  <div
+                    style="width: 64px; height: 64px; background: #fde8e8; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: #ff5a5f;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s-1-2-1-4" />
+                      <path d="M12 18c-1.5 0-3-1-3-3s1.5-3 3-3" />
+                      <path d="M12 18c1.5 0 3-1 3-3s-1.5-3-3-3" />
+                      <path d="M9 15c-1.5-0.5-2.5-2-2.5-3.5s1.5-3 3-3" />
+                      <path d="M15 15c1.5-0.5 2.5-2 2.5-3.5s-1.5-3-3-3" />
+                      <path d="M10 8.5c0-1.5 1-2.5 2-2.5s2 1 2 2.5" />
+                    </svg>
+                  </div>
+                  <span
+                    style="font-size: 0.85rem; font-weight: 500; color: #374151; line-height: 1.3; display: block;">Gentle
+                    Inside<br />& Out</span>
+                </div>
+                <div style="flex: 1;">
+                  <div
+                    style="width: 64px; height: 64px; background: #fde8e8; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: #ff5a5f;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                      <path d="M2 12h20" />
+                    </svg>
+                  </div>
+                  <span
+                    style="font-size: 0.85rem; font-weight: 500; color: #374151; line-height: 1.3; display: block;">Safe
+                    for you &<br />Earth</span>
+                </div>
+                <div style="flex: 1;">
+                  <div
+                    style="width: 64px; height: 64px; background: #fde8e8; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: #ff5a5f;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5">
+                      <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+                      <line x1="16" y1="8" x2="2" y2="22" />
+                      <line x1="17.5" y1="15" x2="9" y2="15" />
+                    </svg>
+                  </div>
+                  <span
+                    style="font-size: 0.85rem; font-weight: 500; color: #374151; line-height: 1.3; display: block;">Naturally<br />Sourced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <!-- Product Banners -->
+    <div class="container">
+      <div id="pdp-banners-container" style="margin-top: 4rem;"></div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="container">
+      <section id="reviews-section" class="pd-reviews-section"
+        style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border);">
+        <div class="section-header">
+          <h2 class="section-title">Customer Reviews</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="reviews-stats"
+          style="display: flex; gap: 4rem; margin-top: 2rem; align-items: center; flex-wrap: wrap;">
+          <div class="stats-overall" style="text-align: center;">
+            <div class="overall-num" id="pd-overall-rating"
+              style="font-size: 4rem; font-weight: 800; color: var(--secondary);">4.8</div>
+            <div class="overall-stars" id="pd-overall-stars" style="color: #ff9800; margin-bottom: 0.5rem;"></div>
+            <div class="overall-count" id="pd-overall-count" style="color: #666;">Based on 12 reviews</div>
+          </div>
+          <div class="stats-bars" style="flex: 1; min-width: 250px; max-width: 400px;">
+            <div class="rating-bar-row" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+              <span style="width: 50px; font-size: 0.9rem;">5 Star</span>
+              <div style="flex: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden;">
+                <div style="width: 85%; height: 100%; background: #ff9800;"></div>
+              </div>
+              <span style="width: 30px; font-size: 0.9rem;">85%</span>
+            </div>
+            <div class="rating-bar-row" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+              <span style="width: 50px; font-size: 0.9rem;">4 Star</span>
+              <div style="flex: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden;">
+                <div style="width: 12%; height: 100%; background: #ff9800;"></div>
+              </div>
+              <span style="width: 30px; font-size: 0.9rem;">12%</span>
+            </div>
+            <div class="rating-bar-row" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+              <span style="width: 50px; font-size: 0.9rem;">3 Star</span>
+              <div style="flex: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden;">
+                <div style="width: 3%; height: 100%; background: #ff9800;"></div>
+              </div>
+              <span style="width: 30px; font-size: 0.9rem;">3%</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-list" id="pd-reviews-list" style="margin-top: 3rem; display: grid; gap: 2rem;">
+          <!-- Rendered via JS -->
+        </div>
+      </section>
+    </div>
+
+    <!-- You May Also Like Section -->
+    <div class="container" style="margin-top: 6rem; margin-bottom: 6rem;">
+      <section class="related-products">
+        <div class="section-header center">
+          <h2 class="section-title">You May Also Like</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="product-grid" id="related-grid" style="margin-top:2rem;">
+          <!-- Rendered via JS -->
+        </div>
+      </section>
+    </div>
+
+    </div>
+      <!-- Newsletter -->
+      <section class="newsletter-section" id="newsletter">
+        <div class="container">
+          <div class="newsletter-card">
+            <div class="newsletter-content">
+              <h2>Join the Ed-a-Mamma Family</h2>
+              <p>Get 15% off your first order + exclusive access to new drops and special offers</p>
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" class="newsletter-input" id="newsletter-email" required />
+                <button type="submit" class="btn btn-primary" id="newsletter-submit">Subscribe</button>
+              </form>
+              <span class="newsletter-note">No spam, ever. Unsubscribe anytime.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="/" class="footer-logo">
+              <img src="/images/logo.jpg" alt="Ed-a-Mamma" style="height: 40px; width: auto; mix-blend-mode: multiply;" />
+            </a>
+            <p class="footer-tagline">Sustainable, nature-inspired clothing for babies, kids, and moms. Designed with love, made with care.</p>
+            <div class="social-links">
+              <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links-grid">
+            <div class="footer-column">
+              <h4>About</h4>
+              <ul>
+                <li><a href="/index.html#sustainability">About Us</a></li>
+                <li><a href="/index.html#sustainability">Impact</a></li>
+                <li><a href="/index.html#newsletter">Community</a></li>
+                <li><a href="/collection.html">School Uniform</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Collection</h4>
+              <ul>
+                <li><a href="/collection.html?category=baby">Babies (0–3 yrs)</a></li>
+                <li><a href="/collection.html?category=kids">Kids (2–10 yrs)</a></li>
+                <li><a href="/collection.html?category=maternity">Maternity</a></li>
+                <li><a href="/collection.html?category=new">New Arrivals</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="mailto:support@edamamma.com">FAQ & Contact Us</a></li>
+                <li><a href="/collection.html">Returns & Exchanges</a></li>
+                <li><a href="/collection.html">Track My Order</a></li>
+                <li><a href="/collection.html">Store Locator</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Ed-a-Mamma. All rights reserved. Made with 🌿 for a better planet.</p>
+          <div class="payment-icons">
+            <span style="font-weight: bold; margin-right: 10px;">Visa</span>
+            <span style="font-weight: bold; margin-right: 10px;">Mastercard</span>
+            <span style="font-weight: bold; margin-right: 10px;">UPI</span>
+            <span style="font-weight: bold;">PayTM</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Account Modal -->
+  <div class="account-overlay" id="account-overlay"></div>
+  <div class="account-modal" id="account-modal">
+    <button class="account-close" id="account-close">&times;</button>
+    <div class="account-content" id="account-login-view">
+      <div class="account-header" style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="font-family: var(--font-serif); margin-bottom: 0.5rem;">Welcome Back</h2>
+        <p style="color: #666;">Login to access your orders and wishlist</p>
+      </div>
+      <form id="login-form" class="account-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <input type="email" placeholder="Email Address" required style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px;" />
+        <input type="password" placeholder="Password" required style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px;" />
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <div style="text-align: center; margin: 0.5rem 0; color: #999; font-size: 0.9rem;">OR</div>
+        <button type="button" class="btn btn-secondary btn-block" id="demo-account-btn" style="background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;">Create Demo Session Account</button>
+      </form>
+    </div>
+
+    <div class="account-content" id="account-profile-view" style="display: none;">
+      <div class="account-header" style="text-align: center; margin-bottom: 2rem;">
+        <div style="width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">D</div>
+        <h2 id="user-display-name" style="font-family: var(--font-serif); margin-bottom: 0.2rem;">Demo User</h2>
+        <p id="user-display-email" style="color: #666; font-size: 0.9rem;">demo@edmamma.com</p>
+      </div>
+      <div class="account-menu" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="#" style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">My Orders <span>❯</span></a>
+        <a href="#" style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">My Wishlist <span>❯</span></a>
+        <a href="#" style="padding: 0.8rem; border-bottom: 1px solid #f3f4f6; text-decoration: none; color: #374151; display: flex; align-items: center; justify-content: space-between;">Saved Addresses <span>❯</span></a>
+        <button class="btn-link" id="logout-btn" style="color: #ff5a5f; text-align: left; padding: 1rem 0.8rem; font-weight: 600;">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="checkout-overlay" id="checkout-overlay"></div>
+  <div class="checkout-modal" id="checkout-modal">
+    <button class="checkout-close" id="checkout-close">&times;</button>
+    <div class="checkout-content">
+      <div class="checkout-header">
+        <h2>Secure Checkout</h2>
+        <div class="checkout-steps">
+          <div class="step active" id="step-dot-1">1</div>
+          <div class="step-line"></div>
+          <div class="step" id="step-dot-2">2</div>
+        </div>
+      </div>
+      
+      <!-- Step 1: Shipping -->
+      <div class="checkout-step-content active" id="checkout-step-1">
+        <h3>Shipping Information</h3>
+        <form id="shipping-form" class="checkout-form">
+          <div class="form-group">
+            <input type="text" id="ship-name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="ship-email" placeholder="Email Address" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" id="ship-phone" placeholder="Phone Number" required />
+            <input type="text" id="ship-pincode" placeholder="Pincode" required maxlength="6" />
+          </div>
+          <div class="form-group">
+            <textarea id="ship-address" placeholder="Complete Address (House No, Building, Street, Area)" required></textarea>
+          </div>
+          <div class="form-row">
+            <input type="text" id="ship-city" placeholder="City" required />
+            <input type="text" id="ship-state" placeholder="State" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Continue to Payment</button>
+        </form>
+      </div>
+
+      <!-- Step 2: Payment -->
+      <div class="checkout-step-content" id="checkout-step-2">
+        <h3>Select Payment Method</h3>
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="payment" value="upi" checked />
+            <div class="payment-info">
+              <strong>UPI (PhonePe, Google Pay, BHIM)</strong>
+              <span>Pay instantly using any UPI app</span>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="card" />
+            <div class="payment-info">
+              <strong>Credit / Debit Card</strong>
+              <span>Visa, Mastercard, AMEX, RuPay</span>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="cod" />
+            <div class="payment-info">
+              <strong>Cash on Delivery</strong>
+              <span>Pay when you receive your order</span>
+            </div>
+          </label>
+        </div>
+        <div class="order-summary-mini">
+          <div class="summary-row">
+            <span>Total Amount:</span>
+            <strong id="checkout-total-val">₹0</strong>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" id="complete-order-btn">Complete Purchase</button>
+        <button class="btn btn-link btn-block" id="back-to-shipping" type="button">Back to Shipping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-message" id="toast-message">Added to cart successfully!</div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    // Professional Accordion Toggle
+    document.querySelectorAll('.accordion-title').forEach(title => {
+      title.addEventListener('click', () => {
+        const content = title.nextElementSibling;
+        const parent = title.parentElement;
+        const icon = title.querySelector('.acc-icon');
+
+        if (content.style.display === 'none') {
+          content.style.display = 'block';
+          parent.classList.add('active-acc');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          parent.classList.remove('active-acc');
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+
+    // Size Selection
+    document.querySelectorAll('.size-btn:not([disabled])').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+        e.target.classList.add('selected');
+      });
+    });
+
+    // Color Selection
+    document.querySelectorAll('.color-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
